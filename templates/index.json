@@ -872,6 +872,13 @@
             "content": "<p>Veuillez prévoir un délai de 7 à 14 jours ouvrables pour la livraison de votre commande (Délais européens) . Le traitement de votre commande prends en moyenne 1 à 3 jours ouvrables.</p>"
           }
         },
+        "item_pkcXei": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je suivre ma commande ?",
+            "content": "<p>Une fois votre colis expédié, vous recevrez un courrier électronique contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande via ce lien : </p>"
+          }
+        },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
@@ -883,6 +890,7 @@
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
+        "item_pkcXei",
         "166442457738b23caf-2"
       ],
       "settings": {
