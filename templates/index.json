@@ -296,46 +296,6 @@
         "product_card_text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "media-grid": {
       "type": "media-grid",
       "blocks": {
@@ -406,11 +366,32 @@
           "type": "image",
           "settings": {
             "title": "Promote your products",
-            "heading_tag": "h4",
+            "heading_tag": "h1",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_kQhfqp": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h1",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
+            "desktop_column_span": 1,
             "desktop_row_span": 1,
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "background": "#000000",
@@ -428,7 +409,8 @@
         "item-1",
         "item-2",
         "item-3",
-        "29246d34-c6e0-4373-84f6-b15e57736a00"
+        "29246d34-c6e0-4373-84f6-b15e57736a00",
+        "image_kQhfqp"
       ],
       "settings": {
         "full_width": true,
@@ -686,7 +668,6 @@
     "scrolling-text",
     "collection-list",
     "featured-collection",
-    "image-with-text-overlay",
     "media-grid",
     "before-after-image",
     "press",
