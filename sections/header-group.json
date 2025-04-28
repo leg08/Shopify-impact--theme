@@ -34,13 +34,13 @@
         "message_B6Xrny"
       ],
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "text_size": "text-xs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
         "background": "#1a1a1a",
-        "background_gradient": "",
-        "text_color": "#ffffff"
+        "background_gradient": "linear-gradient(46deg, rgba(52, 84, 236, 1) 13%, rgba(251, 251, 251, 1) 48%, rgba(248, 170, 170, 1) 86%)",
+        "text_color": "#1a1a1a"
       }
     },
     "header": {
