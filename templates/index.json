@@ -174,7 +174,7 @@
         "item_zk4e7Q"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "block_size": "medium",
         "subheading": "",
         "title": "",
