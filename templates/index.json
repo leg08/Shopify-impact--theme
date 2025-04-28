@@ -75,6 +75,7 @@
         "1664424046b00c932c-0": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/3.jpg",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -87,6 +88,7 @@
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/5.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -99,6 +101,7 @@
         "1664424046b00c932c-2": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/6.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -111,6 +114,7 @@
         "1664424046b00c932c-3": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/1.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -123,6 +127,33 @@
         "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/7.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Cb9ebb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_zk4e7Q": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -138,7 +169,9 @@
         "1664424046b00c932c-1",
         "1664424046b00c932c-2",
         "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
+        "e4a0ef18-1856-4ddd-83d8-871a60d7acac",
+        "item_Cb9ebb",
+        "item_zk4e7Q"
       ],
       "settings": {
         "full_width": false,
