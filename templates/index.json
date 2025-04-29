@@ -287,6 +287,49 @@
         "product_card_text_color": ""
       }
     },
+    "shop_the_look_AWEhLJ": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_68KatG": {
+          "type": "product",
+          "settings": {
+            "product": "maillot-algerie-edition-speciale-2024-25-version-player-copie",
+            "horizontal_position": 82,
+            "vertical_position": 51
+          }
+        },
+        "product_3HqiVm": {
+          "type": "product",
+          "settings": {
+            "product": "maillot-retro-santos-2011-12-copie",
+            "horizontal_position": 30,
+            "vertical_position": 30
+          }
+        }
+      },
+      "block_order": [
+        "product_68KatG",
+        "product_3HqiVm"
+      ],
+      "name": "Shop the look",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify://shop_images/36ddaa11-f3ba-48bd-9b38-4d1cc92c82aa.webp",
+        "title": "LE PRINCE EST DE RETOUR",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#FFF"
+      }
+    },
     "image-link-blocks": {
       "type": "image-link-blocks",
       "blocks": {
@@ -649,6 +692,7 @@
     "featured_collection_cd9CjQ",
     "featured_collection_wY4egz",
     "featured_collection_EaNCR4",
+    "shop_the_look_AWEhLJ",
     "image-link-blocks",
     "collection-list",
     "multiple_images_with_text_iNjeCA",
