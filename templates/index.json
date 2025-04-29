@@ -363,6 +363,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/Copie_de_Sans_titre_5.jpg",
             "subheading": "",
             "title": "",
             "url": "",
@@ -370,13 +371,14 @@
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/Design_sans_titre_8.webp",
             "subheading": "",
             "title": "",
             "url": "",
@@ -384,13 +386,14 @@
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/Design_sans_titre_7.jpg",
             "subheading": "",
             "title": "",
             "url": "",
@@ -398,13 +401,14 @@
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_AWnQA9": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/Copie_de_Sans_titre_1.jpg",
             "subheading": "",
             "title": "",
             "url": "",
@@ -412,7 +416,7 @@
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
@@ -456,7 +460,7 @@
         "content": "<h4><br/></h4>",
         "link_url": "",
         "link_text": "Tout découvrir",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -602,13 +606,13 @@
       ],
       "settings": {
         "full_width": true,
-        "block_size": "medium",
+        "block_size": "small",
         "subheading": "",
         "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",

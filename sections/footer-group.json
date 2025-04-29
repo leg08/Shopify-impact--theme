@@ -107,8 +107,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "A propos de nous",
+            "content": "<p>Votre boutique en ligne pour des maillots de football identique. Découvrez des maillots de toutes les équipes nationales et clubs internationaux avec des nouveautés.<br/><br/></p>",
             "enable_follow_on_shop": true
           }
         }
