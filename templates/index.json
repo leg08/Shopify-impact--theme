@@ -235,6 +235,32 @@
         "product_card_text_color": ""
       }
     },
+    "featured_collection_wY4egz": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "collection-2024-2025",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": true,
+        "products_count": 5,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Maillots 2024/25",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "image-link-blocks": {
       "type": "image-link-blocks",
       "blocks": {
@@ -595,6 +621,7 @@
     "media-grid",
     "scrolling-text",
     "featured_collection_cd9CjQ",
+    "featured_collection_wY4egz",
     "image-link-blocks",
     "collection-list",
     "multiple_images_with_text_iNjeCA",
