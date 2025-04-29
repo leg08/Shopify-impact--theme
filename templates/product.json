@@ -34,6 +34,12 @@
             "heading_tag": "h2"
           }
         },
+        "inventory_NmyQa3": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -57,12 +63,6 @@
         "separator": {
           "type": "separator",
           "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -92,20 +92,43 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true
+          }
+        },
+        "collapsible_text_paicMX": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
+        },
+        "collapsible_text_bmaB4U": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
         }
       },
       "block_order": [
         "title",
+        "inventory_NmyQa3",
         "badges",
         "price",
         "rating",
         "payment_terms",
         "separator",
-        "description",
         "variant_picker",
         "globo_product_option_app_block_NUTAah",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "description",
+        "collapsible_text_paicMX",
+        "collapsible_text_bmaB4U"
       ],
       "settings": {
         "full_width": true,
