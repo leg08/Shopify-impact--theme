@@ -1,1 +1,217 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","settings":{}},"title":{"type":"title","settings":{}},"badges":{"type":"badges","settings":{}},"price":{"type":"price","settings":{}},"rating":{"type":"rating","settings":{}},"payment_terms":{"type":"payment_terms","settings":{}},"separator":{"type":"separator","settings":{}},"description":{"type":"description","settings":{}},"variant_picker":{"type":"variant_picker","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"pickup_availability":{"type":"pickup_availability","settings":{}}},"block_order":["vendor","title","badges","price","rating","payment_terms","separator","description","variant_picker","quantity_selector","buy_buttons"],"settings":{}},"related-products":{"type":"related-products","settings":{}}},"order":["main","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "faq_XYttQM": {
+      "type": "faq",
+      "blocks": {
+        "item_9RJ6bQ": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de traitement et d'expéditions des articles ?",
+            "content": "<p>Après réception de votre commande, nous effectuons des contrôles de qualité et des tests afin de garantir la qualité du produit avant son expédition. Le délai de traitement varie en fonction du produit spécifique, avec un délai moyen d'environ 1 à 3 jours ouvrés.<br/><br/></p>"
+          }
+        },
+        "item_DD3r3a": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison de ma commande ?",
+            "content": "<p>Veuillez prévoir un délai de 7 à 12 jours ouvrables pour la livraison de votre commande (Délais européens) . Le traitement de votre commande prends en moyenne 1 à 3 jours ouvrables.<br/><br/></p>"
+          }
+        },
+        "item_BMKidL": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je suivre ma commande ?",
+            "content": "<p>Une fois votre colis expédié, vous recevrez un courrier électronique contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande via ce lien : <br/><br/></p>"
+          }
+        },
+        "item_XrjRzy": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des tailles pour enfants et adultes ?",
+            "content": "<p>Oui, nous proposons des maillots pour enfants et adultes. Vous trouverez une gamme complète de tailles adaptées à toutes les tranches d'âge, des plus petits aux plus grands. Consultez notre guide des tailles pour choisir celle qui vous convient le mieux.<br/><br/></p>"
+          }
+        },
+        "item_KfeXwp": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des options de personnalisation de maillots ?",
+            "content": "<p>Oui, nous proposons des options de personnalisation de maillots. Vous pouvez ajouter le nom et le numéro de votre choix, ainsi que des badges spécifiques. Pour plus de détails et pour personnaliser votre maillot, veuillez consulter la section dédiée à la personnalisation lors de votre commande.</p>"
+          }
+        },
+        "item_6TdLzT": {
+          "type": "item",
+          "settings": {
+            "title": "Comment entretenir et laver mon maillot de foot ?",
+            "content": "<ol><li><strong>Lavage à la main</strong> : C'est la méthode la plus sûre. Utilisez de l'eau froide ou tiède et un détergent doux.</li><li><strong>Lavage en machine</strong> : Si vous utilisez une machine à laver, retournez le maillot à l'envers et utilisez un cycle délicat à l'eau froide. Évitez l'utilisation de l'eau chaude qui pourrait endommager les impressions.</li><li><strong>Évitez les produits chimiques</strong> : N'utilisez pas de javel ni d'adoucissant, car ils peuvent endommager le tissu et les impressions.</li><li><strong>Séchage</strong> : Laissez sécher à l'air libre à l'ombre. Évitez le séchage en machine et l'exposition directe au soleil pour prévenir la décoloration et la déformation.</li><li><strong>Repassage</strong> : Si nécessaire, repassez à basse température à l'envers et évitez de passer le fer directement sur les impressions ou les logos.</li></ol><p>En suivant ces conseils, vous prolongerez la durée de vie de votre maillot tout en conservant sa qualité et ses couleurs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_9RJ6bQ",
+        "item_DD3r3a",
+        "item_BMKidL",
+        "item_XrjRzy",
+        "item_KfeXwp",
+        "item_6TdLzT"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Notre support client est disponible du lundi au vendredi : de 8h à 20h30.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "Délai de réponse moyen : 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "faq_XYttQM"
+  ]
+}
