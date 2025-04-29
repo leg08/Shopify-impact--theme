@@ -465,6 +465,37 @@
         "product_card_text_color": ""
       }
     },
+    "multiple_images_with_text_iNjeCA": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_xxLTRF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Tf.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Maillots Manche Longue",
+            "content": "<p>Affichez votre passion pour le football avec style et confort grâce à notre collection exclusive de <strong>maillots manches longues</strong>.<br/><br/></p>",
+            "button_url": "",
+            "button_text": "Découvrir.."
+          }
+        }
+      },
+      "block_order": [
+        "item_xxLTRF"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "image-link-blocks": {
       "type": "image-link-blocks",
       "blocks": {
@@ -584,10 +615,10 @@
         "heading_gradient": ""
       }
     },
-    "multiple_images_with_text_iNjeCA": {
+    "multiple_images_with_text_CKxWJR": {
       "type": "multiple-images-with-text",
       "blocks": {
-        "item_xxLTRF": {
+        "item_GjtyBX": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Tf.webp",
@@ -601,7 +632,7 @@
         }
       },
       "block_order": [
-        "item_xxLTRF"
+        "item_GjtyBX"
       ],
       "name": "Multiple images with text",
       "settings": {
@@ -763,8 +794,9 @@
     "featured_collection_KTrqV8",
     "collection-list",
     "featured_collection_H7KxB9",
-    "image-link-blocks",
     "multiple_images_with_text_iNjeCA",
+    "image-link-blocks",
+    "multiple_images_with_text_CKxWJR",
     "featured-collection",
     "impact-text",
     "faq"
