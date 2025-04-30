@@ -97,13 +97,6 @@
             "content": ""
           }
         },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "footer",
-            "show_menu_title": true
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
@@ -111,12 +104,19 @@
             "content": "<p>Votre boutique en ligne pour des maillots de football identique. Découvrez des maillots de toutes les équipes nationales et clubs internationaux avec des nouveautés.<br/><br/></p>",
             "enable_follow_on_shop": true
           }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
         }
       },
       "block_order": [
         "newsletter",
-        "links",
-        "text"
+        "text",
+        "links"
       ],
       "settings": {
         "show_social_media": true,
