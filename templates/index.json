@@ -15,7 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "content_max_width": 780,
+            "image": "shopify://shop_images/gautier12.jpg",
+            "content_max_width": 400,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "Tell your story",
@@ -27,7 +28,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -363,60 +364,56 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Copie_de_Sans_titre_5.jpg",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/collection-2024-2025",
+            "url": "",
             "heading_tag": "h1",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Design_sans_titre_8.webp",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/euro-2024",
+            "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Design_sans_titre_7.jpg",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/ligue-1",
+            "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection_AWnQA9": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Copie_de_Sans_titre_1.jpg",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/la-liga",
+            "url": "",
             "heading_tag": "h1",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         }
       },
@@ -434,7 +431,7 @@
         "subheading": "",
         "title": "Nos collections",
         "content": "",
-        "link_url": "shopify://collections/la-liga",
+        "link_url": "",
         "link_text": "",
         "background": "#ffffff",
         "background_gradient": "",
@@ -606,7 +603,7 @@
       ],
       "settings": {
         "full_width": true,
-        "block_size": "small",
+        "block_size": "medium",
         "subheading": "",
         "title": "",
         "content": "",
@@ -630,7 +627,7 @@
             "subheading": "",
             "title": "KITS ENFANTS",
             "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
-            "button_url": "shopify://collections/kits-enfants",
+            "button_url": "",
             "button_text": "Découvrir.."
           }
         }

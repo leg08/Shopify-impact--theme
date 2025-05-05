@@ -36,15 +36,7 @@
     "product_color_display": "swatch",
     "product_info_alignment": "start",
     "checkout_accent_color": "#f0c417",
-    "checkout_button_color": "#1a1a1a",
-    "content_for_index": [],
-    "blocks": {
-      "3720565183479497137": {
-        "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "checkout_button_color": "#1a1a1a"
   },
   "presets": {
     "Sound": {
