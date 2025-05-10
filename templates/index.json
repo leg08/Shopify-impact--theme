@@ -317,7 +317,7 @@
       "settings": {
         "collection": "nos-ensembles",
         "products": [],
-        "full_width": true,
+        "full_width": false,
         "stack_products": true,
         "show_progress_bar": true,
         "products_count": 5,
