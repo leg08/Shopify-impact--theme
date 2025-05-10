@@ -50,7 +50,7 @@
         "hide_on_scroll": true,
         "logo": "shopify://shop_images/test.png",
         "logo_max_width": 60,
-        "logo_mobile_max_width": 100,
+        "logo_mobile_max_width": 50,
         "menu": "nouveaux-menu-complet",
         "sidebar_menu": "nouveaux-menu-complet",
         "secondary_menu": "",
