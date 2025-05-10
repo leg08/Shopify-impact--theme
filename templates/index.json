@@ -426,9 +426,9 @@
       "settings": {
         "collection": "collection-2025-2026",
         "products": [],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": true,
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
         "products_count": 5,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 5,
