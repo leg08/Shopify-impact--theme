@@ -52,7 +52,7 @@
         "logo_max_width": 60,
         "logo_mobile_max_width": 100,
         "menu": "nouveaux-menu-complet",
-        "sidebar_menu": "",
+        "sidebar_menu": "nouveaux-menu-complet",
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "left",
@@ -64,7 +64,7 @@
         "show_country_name": true,
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/test.png",
-        "reduce_padding": false,
+        "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 20
       }
