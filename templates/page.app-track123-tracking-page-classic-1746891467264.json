@@ -15,11 +15,16 @@
         "11161dbd-4319-4295-8710-e7b7012a9712-1746891467264": {
           "type": "shopify://apps/track123/blocks/search2/60c49c11-a7c0-49a0-861e-2f84d2f294e6",
           "settings": {
+            "search_form_background_color": "",
+            "preview_state": "detail",
             "search_by": "by_order_number_or_by_tracking_number",
             "time_format": "hh:mm a",
+            "map_coordinates": "current_package_location",
             "show_estimated_delivery_time": true,
             "show_carrier_info": true,
+            "only_show_last_mile_carrier": false,
             "show_tracking_number": true,
+            "link_to_carrier_website": true,
             "show_package_info": true,
             "show_reorder_button": true,
             "custom_css": ""
@@ -29,7 +34,19 @@
       "block_order": [
         "11161dbd-4319-4295-8710-e7b7012a9712-1746891467264"
       ],
-      "settings": {}
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
