@@ -112,16 +112,6 @@
             "title": "Title",
             "content": "<p>Share some content to your customers about your products.</p>"
           }
-        },
-        "parcel_panel_edd_kU3mha": {
-          "type": "shopify://apps/parcel-panel/blocks/edd/fc785c3f-90e0-4c98-a20c-7cde9ba5e4b5",
-          "settings": {
-            "corner_radius": 4,
-            "margin_top": 10,
-            "margin_bottom": 10,
-            "padding_x": 16,
-            "padding_y": 16
-          }
         }
       },
       "block_order": [
@@ -138,8 +128,7 @@
         "buy_buttons",
         "description",
         "collapsible_text_paicMX",
-        "collapsible_text_bmaB4U",
-        "parcel_panel_edd_kU3mha"
+        "collapsible_text_bmaB4U"
       ],
       "settings": {
         "full_width": true,
