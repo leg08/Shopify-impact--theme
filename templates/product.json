@@ -69,8 +69,9 @@
           "settings": {
             "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "dropdown",
-            "color_mode": "color",
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
             "size_chart_page": ""
           }
         },
@@ -96,21 +97,29 @@
         "description": {
           "type": "description",
           "settings": {
+            "icon": "none",
+            "icon_width": 20,
             "collapse_content": true
           }
         },
         "collapsible_text_paicMX": {
           "type": "collapsible_text",
           "settings": {
+            "icon": "picto-gift",
+            "icon_width": 20,
             "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
           }
         },
         "collapsible_text_bmaB4U": {
           "type": "collapsible_text",
           "settings": {
+            "icon": "none",
+            "icon_width": 20,
             "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
           }
         }
       },
