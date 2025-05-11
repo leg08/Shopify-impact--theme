@@ -53,69 +53,6 @@
     "media-grid": {
       "type": "media-grid",
       "blocks": {
-        "item-1": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-2": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "29246d34-c6e0-4373-84f6-b15e57736a00": {
           "type": "image",
           "settings": {
@@ -160,9 +97,6 @@
         }
       },
       "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
         "29246d34-c6e0-4373-84f6-b15e57736a00",
         "image_kQhfqp"
       ],
@@ -202,7 +136,10 @@
           "japon-eagle-edition-limitee-copie",
           "psg-purple-2025-copie",
           "manchester-city-third-2025-copie",
-          "lamine-yamal-x-travis-scott-original-copie-1"
+          "lamine-yamal-x-travis-scott-original-copie-1",
+          "maroc-maillot-concept-2024-25-rose-copie",
+          "lamine-yamal-x-travis-scott-original-copie-2",
+          "maroc-maillot-concept-2024-25-rose"
         ],
         "full_width": true,
         "stack_products": false,
@@ -216,6 +153,32 @@
         "link_url": "",
         "link_text": "Tout découvrir",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_rMQaFk": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -781,6 +744,7 @@
     "media-grid",
     "scrolling-text",
     "featured_collection_cd9CjQ",
+    "featured_collection_rMQaFk",
     "featured_collection_wY4egz",
     "featured_collection_EaNCR4",
     "shop_the_look_AWEhLJ",
