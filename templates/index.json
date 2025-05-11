@@ -461,7 +461,7 @@
             "subheading": "",
             "title": "Maillots Manche Longue",
             "content": "<p>Affichez votre passion pour le football avec style et confort grâce à notre collection exclusive de <strong>maillots manches longues</strong>.<br/><br/></p>",
-            "button_url": "",
+            "button_url": "shopify://collections/maillots-manche-longue",
             "button_text": "Découvrir.."
           }
         }
@@ -611,7 +611,7 @@
             "subheading": "",
             "title": "KITS ENFANTS",
             "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
-            "button_url": "",
+            "button_url": "shopify://collections/kits-enfants",
             "button_text": "Découvrir.."
           }
         }
