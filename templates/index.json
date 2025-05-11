@@ -102,6 +102,7 @@
         "video_KtKxPE": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747000930331.mp4",
             "external_video_url": "",
             "show_video_controls": false,
             "title": "",
@@ -125,6 +126,7 @@
         "video_LYKpC3": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747001086096.mp4",
             "external_video_url": "",
             "show_video_controls": false,
             "title": "",
