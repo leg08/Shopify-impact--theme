@@ -433,9 +433,9 @@
         "collection_AWnQA9"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_collections": false,
-        "collections_per_row": 4,
+        "collections_per_row": 5,
         "show_progress_bar": false,
         "subheading": "",
         "title": "Nos collections",
