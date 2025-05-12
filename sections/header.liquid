@@ -87,12 +87,12 @@ the underlying logic of the menu.
       <div class="header__main-nav">
         <div class="header__icon-list">
           <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
-            <span class="sr-only">{{ 'header.general.open_menu' | t }}</span>
+            <span class="sr-only">{{ 'header.general.menu' | t }}</span>
             {%- render 'icon' with 'hamburger' -%}
           </button>
 
           <a href="{{ routes.search_url }}" class="tap-area sm:hidden" aria-controls="search-drawer">
-            <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
+            <span class="sr-only">{{ 'header.general.search' | t }}</span>
             {%- render 'icon' with 'search' -%}
           </a>
 
@@ -101,7 +101,7 @@ the underlying logic of the menu.
               <ul class="contents" role="list">
                 {%- for link in section.settings.menu.links -%}
                   {% liquid
-                    assign link_title_downcase = link.title | downcase
+                    assign link_title_downcase = link.title | strip | downcase
                     assign mega_menu_block = ''
 
                     for block in section.blocks
@@ -240,42 +240,49 @@ the underlying logic of the menu.
           </nav>
         {%- endif -%}
 
-        <div class="header__icon-list">
+        <ul class="header__icon-list">
           {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
-            <div class="hidden md:block shrink-0">
+            <li class="hidden md:block shrink-0">
               {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_vertical_position: 'end' -%}
-            </div>
+            </li>
           {%- endif -%}
 
           {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
-            <div class="hidden md:block shrink-0">
+            <li class="hidden md:block shrink-0">
               {%- render 'localization-selector', type: 'locale', popover_vertical_position: 'end' -%}
-            </div>
+            </li>
           {%- endif -%}
 
-          <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
-            <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
-            {%- render 'icon' with 'search' -%}
-          </a>
+          <li>
+            <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
+              <span class="sr-only">{{ 'header.general.search' | t }}</span>
+              {%- render 'icon' with 'search' -%}
+            </a>
+          </li>
           
           {%- if shop.customer_accounts_enabled -%}
-            <a href="{{ routes.account_url }}" class="hidden tap-area sm:block">
-              <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
-              {%- render 'icon' with 'account' -%}
-            </a>
+            <li>
+              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
+                <span class="sr-only">{% if customer %}{{ 'header.general.account' | t }}{% else %}{{ 'header.general.login' | t }}{% endif %}</span>
+                {%- render 'icon' with 'account' -%}
+              </a>
+            </li>
           {%- endif -%}
 
-          <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
-            <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
-            {%- render 'icon' with 'cart' -%}
+          <li>
+            <a href="{{ routes.cart_url }}" data-no-instant class="relative block tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
+              <span class="sr-only">{{ 'header.general.cart' | t }}</span>
+              {%- render 'icon' with 'cart' -%}
 
-            <div class="header__cart-count">
-              <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
-                {{- cart.item_count -}}
-              </cart-count>
-            </div>
-          </a>
-        </div>
+              <div class="header__cart-count">
+                <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}">
+                  <span class="sr-only">{{ 'cart.general.item_count' | t: count: cart.item_count }}</span>
+                  <span aria-hidden="true">{{ cart.item_count }}</span>
+                </cart-count>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </store-header>

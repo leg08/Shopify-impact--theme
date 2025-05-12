@@ -17,7 +17,7 @@
         {%- case block.type -%}
           {%- when 'subheading' -%}
             {%- if block.settings.text != blank -%}
-              <p class="bold" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</p>
+              <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</p>
             {%- endif -%}
 
           {%- when 'heading' -%}
@@ -60,7 +60,7 @@
                   {%- capture image_sizes_attribute -%}min(100vw, var(--page-width)){%- endcapture -%}
                 {%- endif -%}
 
-                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: image_sizes_attribute, widths: '200,300,400,500,600,800,1000,1200,1400,1600', style: image_style_attribute -}}
+                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: image_sizes_attribute, widths: '200,300,400,500,600,800,1000,1200,1400,1600', style: image_style_attribute -}}
               </div>
             {%- endif -%}
 
@@ -75,7 +75,7 @@
                 {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
                 {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
                 {%- capture style -%}--icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
-                {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
               {%- else -%}
                 {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
               {%- endif -%}
@@ -236,32 +236,28 @@
           "label": "Style",
           "options": [
             {
-              "value": "h0",
-              "label": "H0"
-            },
-            {
               "value": "h1",
-              "label": "H1"
+              "label": "X-Large"
             },
             {
               "value": "h2",
-              "label": "H2"
+              "label": "Large"
             },
             {
               "value": "h3",
-              "label": "H3"
+              "label": "Medium"
             },
             {
               "value": "h4",
-              "label": "H4"
+              "label": "Small"
             },
             {
               "value": "h5",
-              "label": "H5"
+              "label": "X-Small"
             },
             {
               "value": "h6",
-              "label": "H6"
+              "label": "XX-Small"
             }
           ],
           "default": "h1"
