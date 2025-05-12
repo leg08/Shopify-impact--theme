@@ -167,7 +167,7 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "3 Achetés = 1 OFFERT",
+        "text": "3 ACHETÉS = 1 OFFERT",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
