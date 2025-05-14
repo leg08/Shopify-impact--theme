@@ -24,22 +24,14 @@
         "message_jkKdw4": {
           "type": "message",
           "settings": {
-            "text": "Satisfacción garantizada",
-            "url": ""
-          }
-        },
-        "message_9wtUUK": {
-          "type": "message",
-          "settings": {
-            "text": "¡Envío gratis!",
+            "text": "LIVRAISON OFFERTE PENDANT 24H",
             "url": ""
           }
         }
       },
       "block_order": [
         "message",
-        "message_jkKdw4",
-        "message_9wtUUK"
+        "message_jkKdw4"
       ],
       "settings": {
         "enable_sticky": false,
