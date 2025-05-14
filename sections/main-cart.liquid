@@ -144,7 +144,7 @@
                     {%- endif -%}
 
                   {%- when 'offer' -%}
-                    {%- assign previous_block_index = forloop.index0 | minus: 1 -%}
+                    {%- assign previous_block_index = forloop.index0 | minus: 0 -%}
                     {%- assign next_block_index = forloop.index0 | plus: 1 -%}
 
                     {%- if section.blocks[next_block_index].type == 'offer' -%}
