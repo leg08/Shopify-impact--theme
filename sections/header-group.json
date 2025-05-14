@@ -17,13 +17,29 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "Hasta 12x en tarjeta",
+            "url": ""
+          }
+        },
+        "message_jkKdw4": {
+          "type": "message",
+          "settings": {
+            "text": "Satisfacción garantizada",
+            "url": ""
+          }
+        },
+        "message_9wtUUK": {
+          "type": "message",
+          "settings": {
+            "text": "¡Envío gratis!",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_jkKdw4",
+        "message_9wtUUK"
       ],
       "settings": {
         "enable_sticky": false,
@@ -31,18 +47,21 @@
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
         "background": "#1a1a1a",
-        "background_gradient": "linear-gradient(273deg, rgba(255, 0, 0, 1), rgba(255, 255, 255, 0.73) 45%, rgba(10, 83, 160, 1) 96%)",
+        "background_gradient": "",
         "text_color": "#ffffff"
       }
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "div {font-size: 15px; font-family: \"Poppins\";}"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "{{shop.brand.logo}}",
-        "logo_max_width": 120,
-        "logo_mobile_max_width": 100,
+        "logo": "shopify://shop_images/LOGO_OFICIAL_LATAM_200_x_100_px_280_x_80_px_39fd5a88-ae57-4d8a-9662-3747cad57061.png",
+        "logo_max_width": 145,
+        "logo_mobile_max_width": 120,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
@@ -55,9 +74,10 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/LOGO_OFICIAL_LATAM_200_x_100_px_280_x_80_px_1945fa60-cc22-4114-b109-06d4ea44ea85.png",
         "reduce_padding": false,
-        "background_opacity": 100,
-        "background_blur_radius": 0
+        "background_opacity": 80,
+        "background_blur_radius": 16
       }
     }
   },

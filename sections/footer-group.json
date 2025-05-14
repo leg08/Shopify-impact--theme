@@ -21,8 +21,10 @@
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
-            "title": "Free shipping",
-            "content": "<p>Tell your customers about your shipping offer.</p>"
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Envío grátis a toda España",
+            "content": "<p>Recebe tu pedido sin costes de envío, rápido y con seguimiento.</p>"
           }
         },
         "customer-support": {
@@ -32,30 +34,36 @@
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
-            "title": "Customer service",
-            "content": "<p>Tell your customers how they can reach you.</p>"
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Servicio al cliente",
+            "content": "<p>¿Dudas? Estamos disponibles para ayudarte antes y después de tu compra. Escríbenos a <a><strong>servicio@cocinapopular.com</strong></a> y te responderemos lo antes posible.</p>"
           }
         },
         "discount": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 24,
-            "icon_background_type": "none",
-            "title": "Refer a friend",
-            "content": "<p>Tell your customers about your promotional offers.</p>"
-          }
-        },
-        "payment": {
           "type": "item",
           "settings": {
             "icon": "picto-lock",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
-            "title": "Secure payment",
-            "content": "<p>Tel your customers about your payment methods.</p>"
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Pago 100% seguro",
+            "content": "<p>Tus datos están protegidos con cifrado SSL y métodos confiables.</p>"
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-credit-card",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Compra fácil y rápida",
+            "content": "<p>Navega, elige y paga en pocos clics. ¡Así de simple es cocinar mejor!</p>"
           }
         }
       },
@@ -65,11 +73,19 @@
         "discount",
         "payment"
       ],
+      "custom_css": [
+        ".text-with-icons__text-wrapper {font-size: 15px; padding: 0px; font-family: \"Poppins\";}"
+      ],
       "settings": {
         "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
         "heading_tag": "h6",
         "text_alignment": "center",
-        "icon_spacing": "small"
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "footer": {
@@ -80,7 +96,24 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers"
+            "title": "Regístrate para recibir nuevas historias y ofertas personales.",
+            "content": ""
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Quiénes Somos",
+            "content": "<p>En <em><strong>Cocina Popular</strong></em><em>,</em> hacemos que cocinar sea fácil y accesible con productos innovadores y funcionales. Somos una comunidad comprometida con la calidad, el diseño y tu mejor experiencia. ¡Bienvenido! 💛</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "text_QRXYcJ": {
+          "type": "text",
+          "settings": {
+            "title": "Centro de Atención al Cliente",
+            "content": "<p><strong>Servicio:</strong> Lunes a viernes: 08:00 hs a 19:00 hs | Sábados, domingos y feriados: 11:00 hs a 22:00 hs.</p><p><strong>Correo electrónico: </strong>servicio@cocinapopular.com</p>",
+            "enable_follow_on_shop": true
           }
         },
         "links": {
@@ -89,19 +122,16 @@
             "menu": "footer",
             "show_menu_title": true
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>"
-          }
         }
       },
       "block_order": [
         "newsletter",
-        "links",
-        "text"
+        "text",
+        "text_QRXYcJ",
+        "links"
+      ],
+      "custom_css": [
+        "div {font-size: 15px; font-family: \"Poppins\";}"
       ],
       "settings": {
         "show_social_media": true,
