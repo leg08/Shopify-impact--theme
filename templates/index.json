@@ -54,14 +54,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "",
-        "products": [
-          "botella-de-spray-de-aceite-de-oliva-con-control-de-pulverizacion-cocina-popular",
-          "cuenco-de-fruta-de-cristal-con-base-de-madera-cocina-popular",
-          "espremedor-triturador-manual-de-ajo-en-acero-inoxidable-cocina-popular",
-          "molinillo-de-cafe-electrico-portatil-con-carga-usb-y-ceramica-cocina-popular",
-          "pelador-de-verduras-3-en-1-con-funda-para-cuchillo-herramienta-multifuncional-cocina-popular",
-          "tabla-de-cortar-4-en-1-con-descongelacion-rapida-y-rallador-cocina-popular"
-        ],
+        "products": [],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": true,
@@ -80,6 +73,22 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "scrolling_text_ihYrhN": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Promotion text",
+        "text_size": "large",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
       }
     },
     "collection-list": {
@@ -600,6 +609,7 @@
   "order": [
     "slideshow",
     "featured-collection",
+    "scrolling_text_ihYrhN",
     "collection-list",
     "featured-product",
     "scrolling-text",
