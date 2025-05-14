@@ -42,6 +42,11 @@
 
               <tbody class="order-summary__body">
                 {%- for line_item in cart.items -%}
+                  <a class="remove-btn" href="/cart/change?id={{ line_item.key }}&amp;quantity=0">
+Supprimer
+</a>
+
+
                   {%- assign line_max_quantity = '' -%}
 
                   {%- if line_item.variant.inventory_management != blank and line_item.variant.inventory_policy == 'deny' -%}
