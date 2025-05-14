@@ -15,16 +15,16 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/gautier12.jpg",
-            "mobile_image": "shopify://shop_images/gautier12.jpg",
-            "content_max_width": 420,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
+            "image": "shopify://shop_images/banner_1_a7f54abb-6a2a-4d4b-8f7b-9a0927077b9b.png",
+            "mobile_image": "shopify://shop_images/2_bca46d7b-bc89-40db-a400-7b2d238fc565.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center-start text-start",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "¡A TODA ESPAÑA!",
+            "title": "Envío Gratis",
             "heading_tag": "h0",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/all",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -33,16 +33,39 @@
             "background": "",
             "background_gradient": ""
           }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5_47b5cc29-6495-4cf2-841d-a921fa9a5176.png",
+            "mobile_image": "shopify://shop_images/4_5a9e619c-138f-48bc-b78e-a26638482345.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "¡Artículos que hacen la diferencia en tu cocina!",
+            "heading_tag": "h2",
+            "button_text": "¡Ver artículos!",
+            "button_link": "shopify://collections/organizacion-cocina-popular",
+            "text_color": "#ffffff",
+            "button_background": "#ffde59",
+            "button_text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20,
+            "background": "",
+            "background_gradient": ""
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "slide-2"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
         "image_size": "auto",
-        "controls_type": "numbers",
+        "controls_type": "dots",
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 6,
@@ -50,310 +73,30 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "media-grid": {
-      "type": "media-grid",
-      "blocks": {
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Copie_de_Copie_de_Copie_de_Ajouter_un_titre_77b0e8d9-08f3-4448-b491-7cefcf5ea0c3.webp",
-            "title": "",
-            "heading_tag": "h1",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start text-start",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "video_w6zWy4": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/ssstik.io_1742314390615.mp4",
-            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "show_video_controls": false,
-            "title": "",
-            "heading_tag": "h1",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start text-start",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-start-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "video_KtKxPE": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747000930331.mp4",
-            "external_video_url": "",
-            "show_video_controls": false,
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "video_LYKpC3": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747001086096.mp4",
-            "external_video_url": "",
-            "show_video_controls": false,
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "29246d34-c6e0-4373-84f6-b15e57736a00",
-        "video_w6zWy4",
-        "video_KtKxPE",
-        "video_LYKpC3"
-      ],
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "#ffffff",
-        "background_gradient": ""
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "settings": {
-        "full_width": true,
-        "text": "3 ACHETÉS = 1 OFFERT",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 9,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
-    "featured_collection_cd9CjQ": {
+    "featured-collection": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "",
         "products": [
-          "maillot-japon-concept-2023-copie",
-          "lamine-yamal-x-travis-scott-original-copie",
-          "maillot-2024-2025-paris-saint-germain-maillot-third",
-          "japon-eagle-edition-limitee-copie",
-          "psg-purple-2025-copie",
-          "manchester-city-third-2025-copie",
-          "lamine-yamal-x-travis-scott-original-copie-1",
-          "maroc-maillot-concept-2024-25-rose-copie",
-          "lamine-yamal-x-travis-scott-original-copie-2",
-          "maroc-maillot-concept-2024-25-rose"
+          "botella-de-spray-de-aceite-de-oliva-con-control-de-pulverizacion-cocina-popular",
+          "cuenco-de-fruta-de-cristal-con-base-de-madera-cocina-popular",
+          "espremedor-triturador-manual-de-ajo-en-acero-inoxidable-cocina-popular",
+          "molinillo-de-cafe-electrico-portatil-con-carga-usb-y-ceramica-cocina-popular",
+          "pelador-de-verduras-3-en-1-con-funda-para-cuchillo-herramienta-multifuncional-cocina-popular",
+          "tabla-de-cortar-4-en-1-con-descongelacion-rapida-y-rallador-cocina-popular"
         ],
         "full_width": true,
         "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
+        "show_progress_bar": true,
+        "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
+        "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Nos Best-Sellers",
+        "title": "Lo Más Queridos",
         "content": "",
         "link_url": "",
-        "link_text": "Tout découvrir",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "featured_collection_rMQaFk": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "psg",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Paris Saint Germain",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
+        "link_text": "Ver todo",
         "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "featured_collection_wY4egz": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "collection-2024-2025",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Maillots 2024/25",
-        "content": "",
-        "link_url": "",
-        "link_text": "Tout découvrir",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "featured_collection_EaNCR4": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "womens-euro-2025",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "NOUVEAUTÉS EN EXCLUSIVITÉ",
-        "content": "<h4><strong>Women's EURO 2025</strong><br/><br/></h4>",
-        "link_url": "",
-        "link_text": "Tout découvrir",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "shop_the_look_AWEhLJ": {
-      "type": "shop-the-look",
-      "blocks": {
-        "product_68KatG": {
-          "type": "product",
-          "settings": {
-            "product": "maillot-algerie-edition-speciale-2024-25-version-player-copie",
-            "horizontal_position": 82,
-            "vertical_position": 51
-          }
-        },
-        "product_3HqiVm": {
-          "type": "product",
-          "settings": {
-            "product": "maillot-retro-santos-2011-12-copie",
-            "horizontal_position": 30,
-            "vertical_position": 30
-          }
-        }
-      },
-      "block_order": [
-        "product_68KatG",
-        "product_3HqiVm"
-      ],
-      "name": "Shop the look",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "image": "shopify://shop_images/36ddaa11-f3ba-48bd-9b38-4d1cc92c82aa.webp",
-        "title": "LE PRINCE EST DE RETOUR",
-        "content": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": "",
-        "product_card_mobile_background": "",
-        "product_card_mobile_text_color": "",
-        "background_dots": "#ffffff"
-      }
-    },
-    "featured_collection_KTrqV8": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "nos-ensembles",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Nos Ensembles",
-        "content": "<h4><br/></h4>",
-        "link_url": "",
-        "link_text": "Tout découvrir",
-        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -368,12 +111,11 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/Copie_de_Sans_titre_5.jpg",
+            "collection": "decoracion",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/collection-2024-2025",
-            "heading_tag": "h1",
+            "url": "",
+            "heading_tag": "h3",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -383,12 +125,25 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/Design_sans_titre_8.webp",
+            "collection": "limpieza-cocina-popular",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/euro-2024",
-            "heading_tag": "h2",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_znYfHh": {
+          "type": "collection",
+          "settings": {
+            "collection": "organizacion-cocina-popular",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -398,27 +153,11 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/Copie_de_Sans_titre_1.jpg",
+            "collection": "utensilios-de-cocina-cocina-popular",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/la-liga",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_AWnQA9": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/Design_sans_titre_7.jpg",
-            "subheading": "",
-            "title": "",
-            "url": "shopify://collections/ligue-1",
-            "heading_tag": "h1",
+            "url": "",
+            "heading_tag": "h3",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -429,44 +168,252 @@
       "block_order": [
         "collection-1",
         "collection-2",
-        "collection-3",
-        "collection_AWnQA9"
+        "collection_znYfHh",
+        "collection-3"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "stack_collections": false,
-        "collections_per_row": 5,
-        "show_progress_bar": false,
+        "collections_per_row": 3,
+        "show_progress_bar": true,
         "subheading": "",
-        "title": "Nos collections",
+        "title": "Colecciones",
         "content": "",
         "link_url": "",
-        "link_text": "",
-        "background": "#ffffff",
+        "link_text": "Ver todo",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
       }
     },
-    "featured_collection_H7KxB9": {
-      "type": "featured-collection",
-      "name": "Featured collection",
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "dropdown",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "separator",
+        "variant-picker",
+        "buy-buttons"
+      ],
       "settings": {
-        "collection": "collection-2025-2026",
-        "products": [],
+        "full_width": false,
+        "product": "protexclean®-protector-de-estufas-promocion-rayos-paga-4-obten-8",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "Innovación que transforma tu cocina con calidad.",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
+    "media-grid": {
+      "type": "media-grid",
+      "blocks": {
+        "item-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_11zon_0691591f-8554-4f00-bacc-e99831039804.webp",
+            "title": "Almacenamiento y Organización",
+            "heading_tag": "h4",
+            "link_url": "shopify://collections/organizacion-cocina-popular",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "item-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_11zon_7a104737-066e-49c6-8521-1c0021dc074f.webp",
+            "title": "Molinillo de Café",
+            "heading_tag": "h6",
+            "link_url": "shopify://products/molinillo-de-cafe-electrico-portatil-con-carga-usb-y-ceramica-cocina-popular",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_11zon_3fb3605d-cc4c-47ab-93e1-03181c3774c0.webp",
+            "title": "Sacacorchos Eléctrico",
+            "heading_tag": "h6",
+            "link_url": "shopify://products/sacacorchos-electrico-inalambrico-abridor-de-vino-automatico-cocina-popular",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "29246d34-c6e0-4373-84f6-b15e57736a00": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_11zon.webp",
+            "title": "Detalles que inspiran",
+            "heading_tag": "h4",
+            "link_url": "shopify://collections/decoracion",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "29246d34-c6e0-4373-84f6-b15e57736a00"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "featured_collection_jmjBVc": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sacacorchos-electrico-inalambrico-abridor-de-vino-automatico-cocina-popular",
+          "estante-de-condimentos-extraible-de-2-niveles-cocina-popular",
+          "dispensador-de-alimentos-giratorio-redon-cocina-popular",
+          "soporte-para-condimentos-5-en-1-cocina-popular",
+          "organizador-de-huevos-de-32-rejillas-cajon-apilable-nevera-ordenada-cocina-popular",
+          "cuenco-de-fruta-de-cristal-con-base-de-madera-cocina-popular",
+          "espumador-de-leche-inalambrico-usb-tipo-c-batidora-para-cafe-y-capuchino"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
-        "products_count": 50,
+        "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
+        "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Collection 2025 / 2026",
-        "content": "<h4><br/></h4>",
+        "title": "Tu Rincón Soñado",
+        "content": "",
         "link_url": "",
-        "link_text": "Tout découvrir",
-        "background": "#ffffff",
+        "link_text": "Ver todo",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -475,122 +422,129 @@
         "product_card_text_color": ""
       }
     },
-    "multiple_images_with_text_iNjeCA": {
-      "type": "multiple-images-with-text",
+    "slideshow_BFj9HE": {
+      "type": "slideshow",
       "blocks": {
-        "item_xxLTRF": {
-          "type": "item",
+        "image_y6hA7D": {
+          "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2e09d456-da45-4e97-a3a0-97f60723cb79.webp",
-            "image_rotation_degrees": 1.5,
+            "image": "shopify://shop_images/6_434cc9e4-2e7a-413b-8d83-44386736a3d9.png",
+            "mobile_image": "shopify://shop_images/5_866bb53e-51b7-4ea2-9d6b-1c17aba2ab6d.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "subheading": "",
-            "title": "Maillots Manches Longue",
-            "content": "<p>Affichez votre passion pour le football avec style et confort grâce à notre collection exclusive de <strong>maillots manches longues</strong>.<br/><br/></p>",
-            "button_url": "shopify://collections/maillots-manche-longue",
-            "button_text": "Découvrir.."
+            "title": "",
+            "heading_tag": "h6",
+            "button_text": "",
+            "button_link": "shopify://collections/los-mas-vendidos-cocina-popular",
+            "text_color": "#ffffff",
+            "button_background": "#ffde59",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "item_xxLTRF"
+        "image_y6hA7D"
       ],
-      "name": "Multiple images with text",
       "settings": {
         "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
       }
     },
-    "image-link-blocks": {
+    "rich_text_TaVaHn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iEyNV6": {
+          "type": "heading",
+          "settings": {
+            "text": "@cocinapopular",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_EKwtmD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>Lo mejor de la cocina, también en Instagram.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iEyNV6",
+        "richtext_EKwtmD"
+      ],
+      "custom_css": [
+        "div {padding: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_link_blocks_nPaYq6": {
       "type": "image-link-blocks",
       "blocks": {
-        "1664424046b00c932c-0": {
+        "item_JnVAMz": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/3.jpg",
+            "image": "shopify://shop_images/15_11zon.webp",
             "stretch_image": true,
             "link_text": "",
-            "link_url": "",
+            "link_url": "https://www.instagram.com/p/DIWjm_JP0i4/",
             "background": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
-        "1664424046b00c932c-1": {
+        "item_MPWTKc": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/5.webp",
+            "image": "shopify://shop_images/17_11zon.webp",
             "stretch_image": true,
             "link_text": "",
-            "link_url": "",
+            "link_url": "https://www.instagram.com/p/DJMoWCCst4M/",
             "background": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
-        "1664424046b00c932c-2": {
+        "item_FhWYtP": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/6.webp",
+            "image": "shopify://shop_images/16_11zon.webp",
             "stretch_image": true,
             "link_text": "",
-            "link_url": "",
+            "link_url": "https://www.instagram.com/p/DIg9o5lhhQ1/",
             "background": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
-        "1664424046b00c932c-3": {
+        "item_eqCMzN": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/1.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/7.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_Cb9ebb": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/4.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_zk4e7Q": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/2.webp",
+            "image": "shopify://shop_images/18_11zon.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -602,118 +556,25 @@
         }
       },
       "block_order": [
-        "1664424046b00c932c-0",
-        "1664424046b00c932c-1",
-        "1664424046b00c932c-2",
-        "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac",
-        "item_Cb9ebb",
-        "item_zk4e7Q"
+        "item_JnVAMz",
+        "item_MPWTKc",
+        "item_FhWYtP",
+        "item_eqCMzN"
       ],
+      "name": "Image link blocks",
       "settings": {
         "full_width": true,
-        "block_size": "medium",
+        "block_size": "large",
         "subheading": "",
         "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#ffffff",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
-      }
-    },
-    "multiple_images_with_text_CKxWJR": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_GjtyBX": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Tf.webp",
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "KITS ENFANTS",
-            "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
-            "button_url": "shopify://collections/kits-enfants",
-            "button_text": "Découvrir.."
-          }
-        }
-      },
-      "block_order": [
-        "item_GjtyBX"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "kits-enfants",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Kits Enfants",
-        "content": "",
-        "link_url": "shopify://collections/kits-enfants",
-        "link_text": "Voir les collections",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "100%",
-            "subheading": "Identique",
-            "content": "<p>Nos maillots reproduisent fidèlement chaque détail des maillots officiels pour une qualité et une apparence identiques.</p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2.8
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "faq": {
@@ -722,65 +583,41 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Quel est le délai de traitement et d'expéditions des articles ?",
-            "content": "<p>Après réception de votre commande, nous effectuons des contrôles de qualité et des tests afin de garantir la qualité du produit avant son expédition. Le délai de traitement varie en fonction du produit spécifique, avec un délai moyen d'environ 1 à 3 jours ouvrés.</p>"
+            "title": "¿Cuánto tarda en llegar mi pedido?",
+            "content": "<p>Los pedidos suelen entregarse en un plazo de <strong>4 a 8 días laborables</strong> dentro de España. Recibirás un número de seguimiento por email tan pronto como tu pedido sea enviado.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "Quel est le délai de livraison de ma commande ?",
-            "content": "<p>Veuillez prévoir un délai de 7 à 14 jours ouvrables pour la livraison de votre commande (Délais européens) . Le traitement de votre commande prends en moyenne 1 à 3 jours ouvrables.</p>"
-          }
-        },
-        "item_pkcXei": {
-          "type": "item",
-          "settings": {
-            "title": "Puis-je suivre ma commande ?",
-            "content": "<p>Une fois votre colis expédié, vous recevrez un courrier électronique contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande via ce lien : </p>"
+            "title": "¿Puedo devolver un producto si no estoy satisfecho/a?",
+            "content": "<p>¡Claro! Tienes hasta <strong>30 días naturales</strong> desde la recepción para solicitar la devolución. El producto debe estar sin usar y en su embalaje original. Solo tienes que contactarnos y te guiaremos en el proceso.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Proposez-vous des tailles pour enfants et adultes ?",
-            "content": "<p>Oui, nous proposons des maillots pour enfants et adultes. Vous trouverez une gamme complète de tailles adaptées à toutes les tranches d'âge, des plus petits aux plus grands. Consultez notre guide des tailles pour choisir celle qui vous convient le mieux.</p>"
-          }
-        },
-        "item_6pkTPh": {
-          "type": "item",
-          "settings": {
-            "title": "Proposez-vous des options de personnalisation de maillots ?",
-            "content": "<p>Oui, nous proposons des options de personnalisation de maillots. Vous pouvez ajouter le nom et le numéro de votre choix, ainsi que des badges spécifiques. Pour plus de détails et pour personnaliser votre maillot, veuillez consulter la section dédiée à la personnalisation lors de votre commande.</p>"
-          }
-        },
-        "item_VqABR4": {
-          "type": "item",
-          "settings": {
-            "title": "Comment entretenir et laver mon maillot de foot ?",
-            "content": "<p>1.<strong> Lavage à la main</strong></p><p>C'est la méthode la plus sûre. Utilisez de l'eau froide ou tiède et un détergent doux.</p><p>2. <strong>Lavage en machine</strong></p><p>Si vous utilisez une machine à laver, retournez le maillot à l'envers et utilisez un cycle délicat à l'eau froide. Évitez l'utilisation de l'eau chaude qui pourrait endommager les impressions.</p><p>3. <strong>Évitez les produits chimiques</strong></p><p>N'utilisez pas de javel ni d'adoucissant, car ils peuvent endommager le tissu et les impressions.</p><p>4.<strong> Séchage</strong></p><p>Laissez sécher à l'air libre à l'ombre. Évitez le séchage en machine et l'exposition directe au soleil pour prévenir la décoloration et la déformation.</p><p>5. <strong>Repassage</strong></p><p>Si nécessaire, repassez à basse température à l'envers et évitez de passer le fer directement sur les impressions ou les logos.</p>"
+            "title": "¿Cómo puedo rastrear mi pedido?",
+            "content": "<p>Recibirás un correo electrónico con el código de seguimiento dentro de las <strong>48 horas</strong> posteriores a tu compra. Desde ese enlace, podrás ver el estado de tu pedido en tiempo real. Si no lo recibes, contáctanos y te ayudaremos encantados.</p>"
           }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "item_pkcXei",
-        "166442457738b23caf-2",
-        "item_6pkTPh",
-        "item_VqABR4"
+        "166442457738b23caf-2"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Notre support client est disponible 24h/24 et 7j/7.</p>",
+        "content": "<p>Resolvemos tus dudas más comunes para que compres con total confianza en <strong>Cocina Popular</strong>.</p>",
         "team_avatar_width": 160,
-        "support_hours": "Notre support client est disponible du lundi au vendredi : de 8h à 20h30.",
-        "answer_time": "Délai de réponse moyen : 24h",
+        "support_hours": "Lunes a viernes: 8am - 7pm | Sábados, domingos y feriados: 11am - 10pm.",
+        "answer_time": "Tiempo medio de respuesta: 24h",
         "button_text": "",
         "button_url": "",
-        "text_position": "center",
+        "text_position": "start",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -795,21 +632,15 @@
   },
   "order": [
     "slideshow",
-    "media-grid",
-    "scrolling-text",
-    "featured_collection_cd9CjQ",
-    "featured_collection_rMQaFk",
-    "featured_collection_wY4egz",
-    "featured_collection_EaNCR4",
-    "shop_the_look_AWEhLJ",
-    "featured_collection_KTrqV8",
-    "collection-list",
-    "featured_collection_H7KxB9",
-    "multiple_images_with_text_iNjeCA",
-    "image-link-blocks",
-    "multiple_images_with_text_CKxWJR",
     "featured-collection",
-    "impact-text",
+    "collection-list",
+    "featured-product",
+    "scrolling-text",
+    "media-grid",
+    "featured_collection_jmjBVc",
+    "slideshow_BFj9HE",
+    "rich_text_TaVaHn",
+    "image_link_blocks_nPaYq6",
     "faq"
   ]
 }
