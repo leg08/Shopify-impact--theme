@@ -33,31 +33,10 @@
             "background": "",
             "background_gradient": ""
           }
-        },
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "¡Artículos que hacen la diferencia en tu cocina!",
-            "heading_tag": "h2",
-            "button_text": "¡Ver artículos!",
-            "button_link": "shopify://collections/organizacion-cocina-popular",
-            "text_color": "#ffffff",
-            "button_background": "#ffde59",
-            "button_text_color": "#1a1a1a",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20,
-            "background": "",
-            "background_gradient": ""
-          }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "slide-1"
       ],
       "settings": {
         "full_width": true,
@@ -455,42 +434,6 @@
         "background_gradient": ""
       }
     },
-    "rich_text_TaVaHn": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_iEyNV6": {
-          "type": "heading",
-          "settings": {
-            "text": "@cocinapopular",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_EKwtmD": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h5>Lo mejor de la cocina, también en Instagram.</h5>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_iEyNV6",
-        "richtext_EKwtmD"
-      ],
-      "custom_css": [
-        "div {padding: 6px;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "image_link_blocks_nPaYq6": {
       "type": "image-link-blocks",
       "blocks": {
@@ -616,6 +559,42 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "impact_text_LKRgD9": {
+      "type": "impact-text",
+      "blocks": {
+        "item_jA6X7C": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Showcase a benefit of your product",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_jA6X7C"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -627,8 +606,8 @@
     "media-grid",
     "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
-    "rich_text_TaVaHn",
     "image_link_blocks_nPaYq6",
-    "faq"
+    "faq",
+    "impact_text_LKRgD9"
   ]
 }
