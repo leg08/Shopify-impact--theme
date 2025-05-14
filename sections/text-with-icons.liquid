@@ -53,21 +53,13 @@
       <div class="text-with-icons">
         <scroll-carousel class="text-with-icons__list scroll-area full-bleed {% if section.blocks.size <= 3 %}md:unbleed{% else %}lg:unbleed{% endif %}" id="carousel-{{ section.id }}" role="region">
           {%- for block in section.blocks -%}
-            {%- liquid
-              assign loading_strategy = nil
-    
-              if section.index > 3 or forloop.index > 3
-                assign loading_strategy = 'lazy'
-              endif
-            -%}
-
             <div id="block-{{ section.id }}-{{ block.id }}" class="text-with-icons__item snap-center" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
               {%- capture icon -%}
                 {%- if block.settings.custom_icon != blank -%}
                   {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
                   {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
                   {%- capture style -%}--mobile-icon-max-width: {{ block.settings.mobile_icon_width }}px; --icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
-                  {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: loading_strategy, sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                  {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
                 {%- else -%}
                   {%- render 'icon' with block.settings.icon, width: block.settings.mobile_icon_width, height: block.settings.mobile_icon_width, class: 'sm:hidden' -%}
                   {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'hidden sm:block' -%}
@@ -492,27 +484,27 @@
       "options": [
         {
           "value": "h1",
-          "label": "X-Large"
+          "label": "H1"
         },
         {
           "value": "h2",
-          "label": "Large"
+          "label": "H2"
         },
         {
           "value": "h3",
-          "label": "Medium"
+          "label": "H3"
         },
         {
           "value": "h4",
-          "label": "Small"
+          "label": "H4"
         },
         {
           "value": "h5",
-          "label": "X-Small"
+          "label": "H5"
         },
         {
           "value": "h6",
-          "label": "XX-Small"
+          "label": "H6"
         }
       ],
       "default": "h5"

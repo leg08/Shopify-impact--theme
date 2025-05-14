@@ -17,7 +17,7 @@
     #shopify-section-{{ section.id }} {
       {%- assign media_ratio = section.settings.desktop_media_width | divided_by: 50.0 -%}
       --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
-      --product-gallery-media-list-grid: {% if section.settings.desktop_media_layout contains 'grid' %}auto-flow dense / repeat({% if section.settings.desktop_media_layout == 'grid_one' %}1{% else %}2{% endif %}, minmax(0, 1fr)){% else %}auto / auto-flow 100%{% endif %};
+      --product-gallery-media-list-grid: {% if section.settings.desktop_media_layout contains 'grid' %}auto-flow dense / repeat(2, minmax(0, 1fr)){% else %}auto / auto-flow 100%{% endif %};
       --product-gallery-media-list-gap: calc(var(--grid-gutter) / 2);
     }
 
@@ -39,64 +39,53 @@
   }
 </style>
 
-{%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
-
 <div {% render 'section-properties', tight: true %}>
-  <product-rerender id="product-info-{{ product.id }}-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
-    <div class="product">
-      {%- if product.media.size > 0 -%}
-        {%- render 'product-gallery', product: product, product_form_id: product_form_id -%}
-      {%- endif -%}
+  <div class="product">
+    {%- if product.media.size > 0 -%}
+      {%- render 'product-gallery', product: product -%}
+    {%- endif -%}
 
-      {%- render 'product-info', 
-        product: product, 
-        update_url: true,
-        product_form_id: product_form_id,
-        context: 'main_product'
-      -%}
-    </div>
-  </product-rerender>
+    {%- render 'product-info', product: product, update_url: true -%}
+  </div>
 </div>
 
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 
 {%- if section.settings.show_fixed_add_to_cart and product.available and buy_buttons_block != blank -%}
-  <product-rerender id="{{ product_form_id }}-sticky-bar" observe-form="{{ product_form_id }}">
-    {%- if product.selected_or_first_available_variant.available -%}
-      <product-quick-add form="{{ product_form_id }}" class="product-quick-add">
-        {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
+  {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
-        <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" class="sm:hidden">
-          {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color, secondary: true, stretch: true, size: 'lg' -%}
-        </buy-buttons>
+  <product-quick-add form="{{ product_form_id }}" class="product-quick-add">
+    {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
 
-        {%- assign image = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+    <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button class="sm:hidden">
+      {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color, secondary: true, stretch: true, size: 'lg' -%}
+    </buy-buttons>
 
-        <div class="product-quick-add__variant {% if image == blank %}no-image{% endif %} hidden sm:grid">
-          {%- if image != blank -%}
-            <variant-media widths="80,160" form="{{ product_form_id }}">
-              {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'rounded-xs' -}}
-            </variant-media>
-          {%- endif -%}
+    {%- assign image = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
 
-          <div class="v-stack gap-0.5">
-            {%- assign vendor_block = section.blocks | where: 'type', 'vendor' -%}
+    <div class="product-quick-add__variant {% if image == blank %}no-image{% endif %} hidden sm:grid">
+      {%- if image != blank -%}
+        <variant-media widths="80,160" form="{{ product_form_id }}">
+          {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'rounded-xs' -}}
+        </variant-media>
+      {%- endif -%}
 
-            {%- if vendor_block != blank -%}
-              {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
-            {%- endif -%}
+      <div class="v-stack gap-0.5">
+        {%- assign vendor_block = section.blocks | where: 'type', 'vendor' -%}
 
-            <a href="{{ product.url }}" class="bold truncate-text">{{ product.title }}</a>
-            {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
-          </div>
+        {%- if vendor_block != blank -%}
+          {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
+        {%- endif -%}
 
-          <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button>
-            {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color, secondary: true -%}
-          </buy-buttons>
-        </div>
-      </product-quick-add>
-    {%- endif -%}
-  </product-rerender>
+        <a href="{{ product.url }}" class="bold truncate-text">{{ product.title }}</a>
+        {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
+      </div>
+
+      <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button>
+        {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color, secondary: true -%}
+      </buy-buttons>
+    </div>
+  </product-quick-add>
 {%- endif -%}
 
 {%- comment -%}
@@ -105,8 +94,41 @@ when rendering the quick buy popovers, we want to be able to re-use the merchant
 is however only possible by rendering the whole product page, and extracting the relevant part. Here, we therefore render the
 quick buy information in a template, that will be extracted in JS, but ensure it is not visible in the main product page
 {%- endcomment -%}
+<template id="quick-buy-content">
+  {%- capture product_form_id -%}quick-buy-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
-{%- render 'product-quick-buy', product: product -%}
+  <div class="quick-buy-drawer__variant text-start h-stack gap-6" slot="header">
+    {%- assign image = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+
+    {%- if image != blank -%}
+      <variant-media widths="80,160" form="{{ product_form_id }}">
+        {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'quick-buy-drawer__media rounded-xs' -}}
+      </variant-media>
+    {%- endif -%}
+
+    <div class="v-stack gap-0.5">
+      <a href="{{ product.url }}" class="bold justify-self-start">{{ product.title }}</a>
+      {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
+    </div>
+  </div>
+
+  <div class="quick-buy-drawer__info">
+    {%- comment -%}We only show a limited set of information in the quick buy{%- endcomment -%}
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {%- render block -%}
+
+        {%- when 'variant_picker' -%}
+          {%- render 'variant-picker', product: product, form_id: product_form_id, update_url: false, hide_sold_out_variants: block.settings.hide_sold_out_variants, hide_size_chart: true, force_dropdown_as_block: true, block: block -%}
+
+        {%- when 'buy_buttons' -%}
+          {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, button_size: 'lg' -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</template>
 
 {% schema %}
 {
@@ -134,27 +156,27 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "options": [
             {
               "value": "h1",
-              "label": "X-Large"
+              "label": "H1"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "H2"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "H3"
             },
             {
               "value": "h4",
-              "label": "Small"
+              "label": "H4"
             },
             {
               "value": "h5",
-              "label": "X-Small"
+              "label": "H5"
             },
             {
               "value": "h6",
-              "label": "XX-Small"
+              "label": "H6"
             }
           ],
           "default": "h2"
@@ -208,7 +230,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "settings": [
         {
           "type": "paragraph",
-          "content": "To display a rating, add a product rating app. [Learn more](https://apps.shopify.com/categories/store-design-social-proof-product-reviews)"
+          "content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)"
         },
         {
           "type": "checkbox",
@@ -227,289 +249,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "name": "Description",
       "limit": 1,
       "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "picto-coupon",
-              "label": "Coupon",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-percent",
-              "label": "Percent",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-gift",
-              "label": "Gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-star",
-              "label": "Star",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-like",
-              "label": "Like",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-building",
-              "label": "Building",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-love",
-              "label": "Love",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-award-gift",
-              "label": "Award gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-happy",
-              "label": "Happy",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-box",
-              "label": "Box",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-pin",
-              "label": "Pin",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-timer",
-              "label": "Timer",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-validation",
-              "label": "Validation",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-truck",
-              "label": "Truck",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-return",
-              "label": "Return",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-earth",
-              "label": "Earth",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-plane",
-              "label": "Plane",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-credit-card",
-              "label": "Credit card",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-lock",
-              "label": "Lock",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-shield",
-              "label": "Shield",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-secure-profile",
-              "label": "Secure profile",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-money",
-              "label": "Money",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-recycle",
-              "label": "Recycle",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-leaf",
-              "label": "Leaf",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-tree",
-              "label": "Tree",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-mobile-phone",
-              "label": "Mobile phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-phone",
-              "label": "Phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-chat",
-              "label": "Chat",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-customer-support",
-              "label": "Customer support",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-operator",
-              "label": "Operator",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-mailbox",
-              "label": "Mailbox",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-envelope",
-              "label": "Envelope",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-comment",
-              "label": "Comment",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-question",
-              "label": "Question",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-send",
-              "label": "Send",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-at-sign",
-              "label": "At sign",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-camera",
-              "label": "Camera",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-wifi",
-              "label": "WiFi",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-bluetooth",
-              "label": "Bluetooth",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-printer",
-              "label": "Printer",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-smart-watch",
-              "label": "Smart watch",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-coffee",
-              "label": "Coffee",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-burger",
-              "label": "Burger",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-beer",
-              "label": "Beer",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-target",
-              "label": "Target",
-              "group": "Other"
-            },
-            {
-              "value": "picto-document",
-              "label": "Document",
-              "group": "Other"
-            },
-            {
-              "value": "picto-jewelry",
-              "label": "Jewelry",
-              "group": "Other"
-            },
-            {
-              "value": "picto-music",
-              "label": "Music",
-              "group": "Other"
-            },
-            {
-              "value": "picto-file",
-              "label": "File",
-              "group": "Other"
-            },
-            {
-              "value": "picto-mask",
-              "label": "Mask",
-              "group": "Other"
-            },
-            {
-              "value": "picto-stop",
-              "label": "Stop",
-              "group": "Other"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Custom icon",
-          "info": "96 x 96px .png or .svg recommended. Only used when content is collapsed."
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "min": 16,
-          "max": 48,
-          "step": 2,
-          "unit": "px",
-          "label": "Icon width",
-          "default": 20
-        },
         {
           "type": "checkbox",
           "id": "collapse_content",
@@ -537,8 +276,8 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         },
         {
           "type": "select",
-          "id": "selector_style",
-          "label": "Selector style",
+          "id": "selector_mode",
+          "label": "Selector type",
           "options": [
             {
               "value": "block",
@@ -553,30 +292,32 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         },
         {
           "type": "select",
-          "id": "swatch_selector_style",
-          "label": "Swatch selector style",
-          "info": "Enable [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) on product options.",
+          "id": "color_mode",
+          "label": "Color selector type",
+          "info": "Variant image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
           "options": [
             {
-              "value": "swatch",
-              "label": "Swatch"
+              "value": "block",
+              "label": "Block"
             },
             {
               "value": "block_swatch",
-              "label": "Block with swatch"
+              "label": "Block with color swatch"
             },
             {
-              "value": "none",
-              "label": "None"
+              "value": "dropdown",
+              "label": "Dropdown"
+            },
+            {
+              "value": "color",
+              "label": "Color swatch"
+            },
+            {
+              "value": "variant",
+              "label": "Variant image"
             }
           ],
-          "default": "swatch"
-        },
-        {
-          "type": "text",
-          "id": "variant_image_options",
-          "label": "Show variant image for options",
-          "info": "List of comma separated option names where option values show the attached variant image. [Learn more](https://impact-theme.helpscoutdocs.com/article/555-variant-images-for-color-option)"
+          "default": "color"
         },
         {
           "type": "page",
@@ -615,8 +356,8 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         },
         {
           "type": "select",
-          "id": "selector_style",
-          "label": "Selector style",
+          "id": "color_mode",
+          "label": "Selector type",
           "info": "Product image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
           "options": [
             {
@@ -625,18 +366,18 @@ quick buy information in a template, that will be extracted in JS, but ensure it
             },
             {
               "value": "block_swatch",
-              "label": "Block with swatch"
+              "label": "Block with color swatch"
             },
             {
-              "value": "swatch",
-              "label": "Swatch"
+              "value": "color",
+              "label": "Color swatch"
             },
             {
-              "value": "variant_image",
-              "label": "Variant image"
+              "value": "variant",
+              "label": "Product image"
             }
           ],
-          "default": "swatch"
+          "default": "color"
         }
       ]
     },
@@ -702,18 +443,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "settings": [
         {
           "type": "paragraph",
-          "content": "The selector is automatically hidden if all variants are sold out. When at least one variant is available, the selector is always visible to prevent the page from moving when switching variants. To show a volume pricing table, add the dedicatd Volume pricing block."
-        }
-      ]
-    },
-    {
-      "type": "volume_pricing",
-      "name": "Volume pricing table",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Volume pricing is only available to Shopify Plus merchants. [Learn more](https://help.shopify.com/en/manual/b2b/catalogs/quantity-pricing#volume-pricing)"
+          "content": "The selector is automatically hidden if all variants are sold out. When at least one variant is available, the selector is always visible to prevent the page from moving when switching variants."
         }
       ]
     },
@@ -803,289 +533,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "name": "Collapsible text",
       "settings": [
         {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "picto-coupon",
-              "label": "Coupon",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-percent",
-              "label": "Percent",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-gift",
-              "label": "Gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-star",
-              "label": "Star",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-like",
-              "label": "Like",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-building",
-              "label": "Building",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-love",
-              "label": "Love",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-award-gift",
-              "label": "Award gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-happy",
-              "label": "Happy",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-box",
-              "label": "Box",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-pin",
-              "label": "Pin",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-timer",
-              "label": "Timer",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-validation",
-              "label": "Validation",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-truck",
-              "label": "Truck",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-return",
-              "label": "Return",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-earth",
-              "label": "Earth",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-plane",
-              "label": "Plane",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-credit-card",
-              "label": "Credit card",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-lock",
-              "label": "Lock",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-shield",
-              "label": "Shield",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-secure-profile",
-              "label": "Secure profile",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-money",
-              "label": "Money",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-recycle",
-              "label": "Recycle",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-leaf",
-              "label": "Leaf",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-tree",
-              "label": "Tree",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-mobile-phone",
-              "label": "Mobile phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-phone",
-              "label": "Phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-chat",
-              "label": "Chat",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-customer-support",
-              "label": "Customer support",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-operator",
-              "label": "Operator",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-mailbox",
-              "label": "Mailbox",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-envelope",
-              "label": "Envelope",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-comment",
-              "label": "Comment",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-question",
-              "label": "Question",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-send",
-              "label": "Send",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-at-sign",
-              "label": "At sign",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-camera",
-              "label": "Camera",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-wifi",
-              "label": "WiFi",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-bluetooth",
-              "label": "Bluetooth",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-printer",
-              "label": "Printer",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-smart-watch",
-              "label": "Smart watch",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-coffee",
-              "label": "Coffee",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-burger",
-              "label": "Burger",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-beer",
-              "label": "Beer",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-target",
-              "label": "Target",
-              "group": "Other"
-            },
-            {
-              "value": "picto-document",
-              "label": "Document",
-              "group": "Other"
-            },
-            {
-              "value": "picto-jewelry",
-              "label": "Jewelry",
-              "group": "Other"
-            },
-            {
-              "value": "picto-music",
-              "label": "Music",
-              "group": "Other"
-            },
-            {
-              "value": "picto-file",
-              "label": "File",
-              "group": "Other"
-            },
-            {
-              "value": "picto-mask",
-              "label": "Mask",
-              "group": "Other"
-            },
-            {
-              "value": "picto-stop",
-              "label": "Stop",
-              "group": "Other"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Custom icon",
-          "info": "96 x 96px .png or .svg recommended"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "min": 16,
-          "max": 48,
-          "step": 2,
-          "unit": "px",
-          "label": "Icon width",
-          "default": 20
-        },
-        {
           "type": "text",
           "id": "title",
           "label": "Title",
@@ -1096,12 +543,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "id": "content",
           "label": "Content",
           "default": "<p>Share some content to your customers about your products.</p>"
-        },
-        {
-          "type": "page",
-          "id": "page",
-          "label": "Page",
-          "info": "Replaces inline content if specified."
         }
       ]
     },
@@ -1598,7 +1039,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "step": 4,
           "unit": "px",
           "label": "Icon width",
-          "default": 20
+          "default": 24
         },
         {
           "type": "text",
@@ -1694,16 +1135,12 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "label": "Desktop media layout",
       "options": [
         {
-          "value": "grid_one",
-          "label": "Grid (1x1)"
-        },
-        {
           "value": "grid",
-          "label": "Grid (2x2)"
+          "label": "Grid"
         },
         {
           "value": "grid_highlight",
-          "label": "Grid (2x2) with highlighted media"
+          "label": "Grid with main media"
         },
         {
           "value": "carousel_thumbnails_left",

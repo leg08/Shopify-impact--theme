@@ -14,24 +14,16 @@
 
       <div class="multi-column scroll-area bleed md:unbleed">
         {%- for block in section.blocks -%}
-          {%- liquid
-            assign loading_strategy = nil
-  
-            if section.index > 3 or forloop.index > 3
-              assign loading_strategy = 'lazy'
-            endif
-          -%}
-
           {%- case block.type -%}
             {%- when 'item' -%}
               <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
                 {%- if block.settings.video != blank -%}
                   <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
-                    {{ block.settings.video | video_tag: playsinline: true, muted: true, controls: block.settings.show_controls, loop: true, preload: 'metadata', class: 'rounded' }}
+                    {{ block.settings.video | video_tag: playsinline: true, muted: true, loop: true, preload: 'metadata', class: 'rounded' }}
                   </video-media>
                 {%- elsif block.settings.image != blank -%}
                   {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
-                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
                 {%- endif -%}
 
                 {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
@@ -191,12 +183,6 @@
           "info": "Video are muted automatically and will autoplay."
         },
         {
-          "type": "checkbox",
-          "id": "show_controls",
-          "label": "Show video controls",
-          "default": false
-        },
-        {
           "type": "select",
           "id": "column_size",
           "label": "Desktop item size",
@@ -233,27 +219,27 @@
           "options": [
             {
               "value": "h1",
-              "label": "X-Large"
+              "label": "H1"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "H2"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "H3"
             },
             {
               "value": "h4",
-              "label": "Small"
+              "label": "H4"
             },
             {
               "value": "h5",
-              "label": "X-Small"
+              "label": "H5"
             },
             {
               "value": "h6",
-              "label": "XX-Small"
+              "label": "H6"
             }
           ],
           "default": "h4"

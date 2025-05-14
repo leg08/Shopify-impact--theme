@@ -27,11 +27,6 @@
         <div class="footer__block-list empty:hidden">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when '@app' -%}
-                <div class="footer__block footer__block--app">
-                  {%- render block -%}
-                </div>
-
               {%- when 'text' -%}
                 {%- if block.settings.title != blank or block.settings.content != blank or shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
                   <div class="footer__block footer__block--text" {{ block.shopify_attributes }}>
@@ -57,7 +52,7 @@
                 {%- if block.settings.menu != blank -%}
                   <div class="footer__block footer__block--menu" {{ block.shopify_attributes }}>
                     {%- if block.settings.show_menu_title -%}
-                      <p class="bold">{{ block.settings.menu_title | default: block.settings.menu.title }}</p>
+                      <p class="bold">{{ block.settings.menu.title }}</p>
                     {%- endif -%}
 
                     <ul class="v-stack gap-3" role="list">
@@ -170,24 +165,14 @@
 
         <div class="footer__aside-bottom">
           {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
-            <ul class="footer__payment-icons h-stack wrap gap-2">
+            <div class="footer__payment-icons h-stack wrap gap-2">
               {%- for type in shop.enabled_payment_types -%}
-                <li class="contents">{{ type | payment_type_svg_tag }}</li>
+                {{- type | payment_type_svg_tag -}}
               {%- endfor -%}
-            </ul>
+            </div>
           {%- endif -%}
 
-          <div class="footer__copyright v-stack gap-1">
-            <p class="text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
-
-            {%- if section.settings.show_policy_links and shop.policies.size > 0 -%}
-              <ul class="footer__policy-links unstyled-list">
-                {%- for policy in shop.policies -%}
-                  <li class="contents"><a href="{{ policy.url }}" class="text-sm link-faded">{{ policy.title }}</a></li>
-                {%- endfor -%}
-              </ul>
-            {%- endif -%}
-          </div>
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
         </div>
       </div>
     </div>
@@ -213,12 +198,6 @@
       "id": "show_payment_icons",
       "label": "Show payment icons",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_policy_links",
-      "label": "Show policy links",
-      "info": "To add store policies, go to your [policy settings](/admin/settings/legal)."
     },
     {
       "type": "header",
@@ -256,9 +235,6 @@
     }
   ],
   "blocks": [
-    {
-      "type": "@app"
-    },
     {
       "type": "text",
       "name": "Text",
@@ -300,12 +276,6 @@
           "id": "show_menu_title",
           "label": "Show menu title",
           "default": true
-        },
-        {
-          "type": "inline_richtext",
-          "id": "menu_title",
-          "label": "Menu title",
-          "info": "Replaces the default menu title"
         }
       ]
     },

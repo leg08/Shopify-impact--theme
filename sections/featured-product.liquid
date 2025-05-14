@@ -17,7 +17,7 @@
     #shopify-section-{{ section.id }} {
     {%- assign media_ratio = section.settings.desktop_media_width | divided_by: 50.0 -%}
       --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
-      --product-gallery-media-list-grid: {% if section.settings.desktop_media_layout contains 'grid' %}auto-flow dense / repeat({% if section.settings.desktop_media_layout == 'grid_one' %}1{% else %}2{% endif %}, minmax(0, 1fr)){% else %}auto / auto-flow 100%{% endif %};
+      --product-gallery-media-list-grid: {% if section.settings.desktop_media_layout contains 'grid' %}auto-flow dense / repeat(2, minmax(0, 1fr)){% else %}auto / auto-flow 100%{% endif %};
       --product-gallery-media-list-gap: calc(var(--grid-gutter) / 2);
     }
 
@@ -40,112 +40,80 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
-
-  <product-rerender id="featured-product-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
-    <div class="product">
-      {%- if section.settings.product != blank -%}
-        {%- if section.settings.product.media.size > 0 -%}
-          {%- render 'product-gallery', product: section.settings.product, product_form_id: product_form_id -%}
-        {%- endif -%}
-
-        {%- render 'product-info', 
-          product: section.settings.product, 
-          product_form_id: product_form_id, 
-          update_url: false,
-          context: 'featured_product'
-        -%}
-      {%- else -%}
-        <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
-          <div class="product-gallery__ar-wrapper">
-            <div class="product-gallery__media-list-wrapper">
-
-              <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
-                <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
-                  {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
-                </div>
-              </media-carousel>
-            </div>
-          </div>
-        </product-gallery>
-
-        <safe-sticky class="product-info">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'vendor' -%}
-                <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
-
-              {%- when 'title' -%}
-                <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
-
-              {%- when 'price' -%}
-                <div class="product-info__price">
-                  <price-list class="price-list price-list--lg">
-                    <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
-                  </price-list>
-                </div>
-
-              {%- when 'separator' -%}
-                <hr class="product-info__separator" {{ block.shopify_attributes }}>
-
-              {%- when 'description' -%}
-                <div class="product-info__description" {{ block.shopify_attributes }}>
-                  <div class="prose">
-                    {{- 'general.on_boarding.product_description' | t -}}
-                  </div>
-                </div>
-
-              {%- when 'quantity_selector' -%}
-                <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
-                  {%- assign variant = section.settings.product.selected_or_first_available_variant -%}
-
-                  <div class="form-control">
-                    <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
-
-                    <quantity-selector class="quantity-selector">
-                      <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                      <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
-                      <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
-                    </quantity-selector>
-                  </div>
-
-                  {%- liquid
-                    assign quantity_rules = ''
-    
-                    if variant.quantity_rule.min > 1
-                      assign rule = 'product.quantity.minimum_of' | t: min: variant.quantity_rule.min
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-    
-                    if variant.quantity_rule.max != nil
-                      assign rule = 'product.quantity.maximum_of' | t: max: variant.quantity_rule.max
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-    
-                    if variant.quantity_rule.increment > 1
-                      assign rule = 'product.quantity.increment_of' | t: step: variant.quantity_rule.increment
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-                  -%}
-    
-                  {%- if quantity_rules != blank -%}
-                    <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
-                  {%- endif -%}
-                </div>
-
-              {%- when 'buy_buttons' -%}
-                <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
-                  <buy-buttons class="buy-buttons">
-                    {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
-                    {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
-                  </buy-buttons>
-                </div>
-            {%- endcase -%}
-          {%- endfor -%}
-        </safe-sticky>
+  <div class="product">
+    {%- if section.settings.product != blank -%}
+      {%- if section.settings.product.media.size > 0 -%}
+        {%- render 'product-gallery', product: section.settings.product -%}
       {%- endif -%}
-    </div>
-  </product-rerender>
+
+      {%- render 'product-info', product: section.settings.product, update_url: false -%}
+    {%- else -%}
+      <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
+        <div class="product-gallery__ar-wrapper">
+          <div class="product-gallery__media-list-wrapper">
+
+            <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
+              <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
+                {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
+              </div>
+            </media-carousel>
+          </div>
+        </div>
+      </product-gallery>
+
+      <safe-sticky class="product-info">
+        {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'vendor' -%}
+              <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
+
+            {%- when 'title' -%}
+              <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
+
+            {%- when 'price' -%}
+              <div class="product-info__price">
+                <price-list class="price-list price-list--lg">
+                  <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
+                </price-list>
+              </div>
+
+            {%- when 'separator' -%}
+              <hr class="product-info__separator" {{ block.shopify_attributes }}>
+
+            {%- when 'description' -%}
+              <div class="product-info__description" {{ block.shopify_attributes }}>
+                <div class="prose">
+                  {{- 'general.on_boarding.product_description' | t -}}
+                </div>
+              </div>
+
+            {%- when 'quantity_selector' -%}
+              <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
+                <div class="form-control">
+                  <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
+
+                  <quantity-selector class="quantity-selector">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+                    <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="1" autocomplete="off">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+                  </quantity-selector>
+                </div>
+              </div>
+
+            {%- when 'buy_buttons' -%}
+              <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
+                <buy-buttons class="buy-buttons">
+                  {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+                  {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
+                </buy-buttons>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </safe-sticky>
+    {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
@@ -178,27 +146,27 @@
           "options": [
             {
               "value": "h1",
-              "label": "X-Large"
+              "label": "H1"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "H2"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "H3"
             },
             {
               "value": "h4",
-              "label": "Small"
+              "label": "H4"
             },
             {
               "value": "h5",
-              "label": "X-Small"
+              "label": "H5"
             },
             {
               "value": "h6",
-              "label": "XX-Small"
+              "label": "H6"
             }
           ],
           "default": "h2"
@@ -252,7 +220,7 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "To display a rating, add a product rating app. [Learn more](https://apps.shopify.com/categories/store-design-social-proof-product-reviews)"
+          "content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)"
         },
         {
           "type": "checkbox",
@@ -271,289 +239,6 @@
       "name": "Description",
       "limit": 1,
       "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "picto-coupon",
-              "label": "Coupon",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-percent",
-              "label": "Percent",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-gift",
-              "label": "Gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-star",
-              "label": "Star",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-like",
-              "label": "Like",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-building",
-              "label": "Building",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-love",
-              "label": "Love",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-award-gift",
-              "label": "Award gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-happy",
-              "label": "Happy",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-box",
-              "label": "Box",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-pin",
-              "label": "Pin",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-timer",
-              "label": "Timer",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-validation",
-              "label": "Validation",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-truck",
-              "label": "Truck",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-return",
-              "label": "Return",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-earth",
-              "label": "Earth",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-plane",
-              "label": "Plane",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-credit-card",
-              "label": "Credit card",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-lock",
-              "label": "Lock",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-shield",
-              "label": "Shield",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-secure-profile",
-              "label": "Secure profile",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-money",
-              "label": "Money",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-recycle",
-              "label": "Recycle",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-leaf",
-              "label": "Leaf",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-tree",
-              "label": "Tree",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-mobile-phone",
-              "label": "Mobile phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-phone",
-              "label": "Phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-chat",
-              "label": "Chat",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-customer-support",
-              "label": "Customer support",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-operator",
-              "label": "Operator",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-mailbox",
-              "label": "Mailbox",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-envelope",
-              "label": "Envelope",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-comment",
-              "label": "Comment",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-question",
-              "label": "Question",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-send",
-              "label": "Send",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-at-sign",
-              "label": "At sign",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-camera",
-              "label": "Camera",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-wifi",
-              "label": "WiFi",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-bluetooth",
-              "label": "Bluetooth",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-printer",
-              "label": "Printer",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-smart-watch",
-              "label": "Smart watch",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-coffee",
-              "label": "Coffee",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-burger",
-              "label": "Burger",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-beer",
-              "label": "Beer",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-target",
-              "label": "Target",
-              "group": "Other"
-            },
-            {
-              "value": "picto-document",
-              "label": "Document",
-              "group": "Other"
-            },
-            {
-              "value": "picto-jewelry",
-              "label": "Jewelry",
-              "group": "Other"
-            },
-            {
-              "value": "picto-music",
-              "label": "Music",
-              "group": "Other"
-            },
-            {
-              "value": "picto-file",
-              "label": "File",
-              "group": "Other"
-            },
-            {
-              "value": "picto-mask",
-              "label": "Mask",
-              "group": "Other"
-            },
-            {
-              "value": "picto-stop",
-              "label": "Stop",
-              "group": "Other"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Custom icon",
-          "info": "96 x 96px .png or .svg recommended. Only used when content is collapsed."
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "min": 16,
-          "max": 48,
-          "step": 2,
-          "unit": "px",
-          "label": "Icon width",
-          "default": 20
-        },
         {
           "type": "checkbox",
           "id": "collapse_content",
@@ -581,8 +266,8 @@
         },
         {
           "type": "select",
-          "id": "selector_style",
-          "label": "Selector style",
+          "id": "selector_mode",
+          "label": "Selector type",
           "options": [
             {
               "value": "block",
@@ -597,30 +282,32 @@
         },
         {
           "type": "select",
-          "id": "swatch_selector_style",
-          "label": "Swatch selector style",
-          "info": "Enable [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) on product options.",
+          "id": "color_mode",
+          "label": "Color selector type",
+          "info": "Variant image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
           "options": [
             {
-              "value": "swatch",
-              "label": "Swatch"
+              "value": "block",
+              "label": "Block"
             },
             {
               "value": "block_swatch",
-              "label": "Block with swatch"
+              "label": "Block with color swatch"
             },
             {
-              "value": "none",
-              "label": "None"
+              "value": "dropdown",
+              "label": "Dropdown"
+            },
+            {
+              "value": "color",
+              "label": "Color swatch"
+            },
+            {
+              "value": "variant",
+              "label": "Variant image"
             }
           ],
-          "default": "swatch"
-        },
-        {
-          "type": "text",
-          "id": "variant_image_options",
-          "label": "Show variant image for options",
-          "info": "List of comma separated option names where option values show the attached variant image. [Learn more](https://support.maestrooo.com/article/767-variant-image-for-color-options)"
+          "default": "color"
         },
         {
           "type": "page",
@@ -637,7 +324,7 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "Link products of different colors using swatches. [Learn more](https://support.maestrooo.com/article/722-product-variations-linked-products)"
+          "content": "Link products of different colors using swatches. [Learn more](https://support.maestrooo.com/article/307-product-creating-product-variations-that-link-to-different-pages)"
         },
         {
           "type": "text",
@@ -659,8 +346,8 @@
         },
         {
           "type": "select",
-          "id": "selector_style",
-          "label": "Selector style",
+          "id": "color_mode",
+          "label": "Selector type",
           "info": "Product image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
           "options": [
             {
@@ -669,18 +356,18 @@
             },
             {
               "value": "block_swatch",
-              "label": "Block with swatch"
+              "label": "Block with color swatch"
             },
             {
-              "value": "swatch",
-              "label": "Swatch"
+              "value": "color",
+              "label": "Color swatch"
             },
             {
-              "value": "variant_image",
-              "label": "Variant image"
+              "value": "variant",
+              "label": "Product image"
             }
           ],
-          "default": "swatch"
+          "default": "color"
         }
       ]
     },
@@ -747,17 +434,6 @@
         {
           "type": "paragraph",
           "content": "The selector is automatically hidden if all variants are sold out. When at least one variant is available, the selector is always visible to prevent the page from moving when switching variants."
-        }
-      ]
-    },
-    {
-      "type": "volume_pricing",
-      "name": "Volume pricing table",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Volume pricing is only available to Shopify Plus merchants. [Learn more](https://help.shopify.com/en/manual/b2b/catalogs/quantity-pricing#volume-pricing)"
         }
       ]
     },
@@ -847,289 +523,6 @@
       "name": "Collapsible text",
       "settings": [
         {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "picto-coupon",
-              "label": "Coupon",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-percent",
-              "label": "Percent",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-gift",
-              "label": "Gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-star",
-              "label": "Star",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-like",
-              "label": "Like",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-building",
-              "label": "Building",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-love",
-              "label": "Love",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-award-gift",
-              "label": "Award gift",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-happy",
-              "label": "Happy",
-              "group": "Shop"
-            },
-            {
-              "value": "picto-box",
-              "label": "Box",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-pin",
-              "label": "Pin",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-timer",
-              "label": "Timer",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-validation",
-              "label": "Validation",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-truck",
-              "label": "Truck",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-return",
-              "label": "Return",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-earth",
-              "label": "Earth",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-plane",
-              "label": "Plane",
-              "group": "Shipping"
-            },
-            {
-              "value": "picto-credit-card",
-              "label": "Credit card",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-lock",
-              "label": "Lock",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-shield",
-              "label": "Shield",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-secure-profile",
-              "label": "Secure profile",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-money",
-              "label": "Money",
-              "group": "Payment & Security"
-            },
-            {
-              "value": "picto-recycle",
-              "label": "Recycle",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-leaf",
-              "label": "Leaf",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-tree",
-              "label": "Tree",
-              "group": "Ecology"
-            },
-            {
-              "value": "picto-mobile-phone",
-              "label": "Mobile phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-phone",
-              "label": "Phone",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-chat",
-              "label": "Chat",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-customer-support",
-              "label": "Customer support",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-operator",
-              "label": "Operator",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-mailbox",
-              "label": "Mailbox",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-envelope",
-              "label": "Envelope",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-comment",
-              "label": "Comment",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-question",
-              "label": "Question",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-send",
-              "label": "Send",
-              "group": "Communication"
-            },
-            {
-              "value": "picto-at-sign",
-              "label": "At sign",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-camera",
-              "label": "Camera",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-wifi",
-              "label": "WiFi",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-bluetooth",
-              "label": "Bluetooth",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-printer",
-              "label": "Printer",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-smart-watch",
-              "label": "Smart watch",
-              "group": "Tech"
-            },
-            {
-              "value": "picto-coffee",
-              "label": "Coffee",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-burger",
-              "label": "Burger",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-beer",
-              "label": "Beer",
-              "group": "Food & Drink"
-            },
-            {
-              "value": "picto-target",
-              "label": "Target",
-              "group": "Other"
-            },
-            {
-              "value": "picto-document",
-              "label": "Document",
-              "group": "Other"
-            },
-            {
-              "value": "picto-jewelry",
-              "label": "Jewelry",
-              "group": "Other"
-            },
-            {
-              "value": "picto-music",
-              "label": "Music",
-              "group": "Other"
-            },
-            {
-              "value": "picto-file",
-              "label": "File",
-              "group": "Other"
-            },
-            {
-              "value": "picto-mask",
-              "label": "Mask",
-              "group": "Other"
-            },
-            {
-              "value": "picto-stop",
-              "label": "Stop",
-              "group": "Other"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Custom icon",
-          "info": "96 x 96px .png or .svg recommended"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "min": 16,
-          "max": 48,
-          "step": 2,
-          "unit": "px",
-          "label": "Icon width",
-          "default": 20
-        },
-        {
           "type": "text",
           "id": "title",
           "label": "Title",
@@ -1140,12 +533,6 @@
           "id": "content",
           "label": "Content",
           "default": "<p>Share some content to your customers about your products.</p>"
-        },
-        {
-          "type": "page",
-          "id": "page",
-          "label": "Page",
-          "info": "Replaces inline content if specified."
         }
       ]
     },
@@ -1642,7 +1029,7 @@
           "step": 4,
           "unit": "px",
           "label": "Icon width",
-          "default": 20
+          "default": 24
         },
         {
           "type": "text",
@@ -1737,16 +1124,12 @@
       "label": "Desktop media layout",
       "options": [
         {
-          "value": "grid_one",
-          "label": "Grid (1x1)"
-        },
-        {
           "value": "grid",
-          "label": "Grid (2x2)"
+          "label": "Grid"
         },
         {
           "value": "grid_highlight",
-          "label": "Grid (2x2) with highlighted media"
+          "label": "Grid with main media"
         },
         {
           "value": "carousel_thumbnails_left",
