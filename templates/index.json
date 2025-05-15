@@ -590,58 +590,6 @@
         "heading_gradient": ""
       }
     },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "¿Cuánto tarda en llegar mi pedido?",
-            "content": "<p>Los pedidos suelen entregarse en un plazo de <strong>4 a 8 días laborables</strong> dentro de España. Recibirás un número de seguimiento por email tan pronto como tu pedido sea enviado.</p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "¿Puedo devolver un producto si no estoy satisfecho/a?",
-            "content": "<p>¡Claro! Tienes hasta <strong>30 días naturales</strong> desde la recepción para solicitar la devolución. El producto debe estar sin usar y en su embalaje original. Solo tienes que contactarnos y te guiaremos en el proceso.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "¿Cómo puedo rastrear mi pedido?",
-            "content": "<p>Recibirás un correo electrónico con el código de seguimiento dentro de las <strong>48 horas</strong> posteriores a tu compra. Desde ese enlace, podrás ver el estado de tu pedido en tiempo real. Si no lo recibes, contáctanos y te ayudaremos encantados.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Resolvemos tus dudas más comunes para que compres con total confianza en <strong>Cocina Popular</strong>.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "Lunes a viernes: 8am - 7pm | Sábados, domingos y feriados: 11am - 10pm.",
-        "answer_time": "Tiempo medio de respuesta: 24h",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
     "impact_text_LKRgD9": {
       "type": "impact-text",
       "blocks": {
@@ -677,6 +625,82 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "166442457738b23caf-0": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de traitement et d'expéditions des articles ?",
+            "content": "<p>Los pedidos suelen entregarse en un plazo de <strong>4 a 8 días laborables</strong> dentro de España. Recibirás un número de seguimiento por email tan pronto como tu pedido sea enviado.</p>"
+          }
+        },
+        "166442457738b23caf-1": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison de ma commande ?",
+            "content": "<p>¡Claro! Tienes hasta <strong>30 días naturales</strong> desde la recepción para solicitar la devolución. El producto debe estar sin usar y en su embalaje original. Solo tienes que contactarnos y te guiaremos en el proceso.</p>"
+          }
+        },
+        "item_yTaBL9": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je suivre ma commande ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "166442457738b23caf-2": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des tailles pour enfants et adultes ?",
+            "content": "<p>Recibirás un correo electrónico con el código de seguimiento dentro de las <strong>48 horas</strong> posteriores a tu compra. Desde ese enlace, podrás ver el estado de tu pedido en tiempo real. Si no lo recibes, contáctanos y te ayudaremos encantados.</p>"
+          }
+        },
+        "item_jQTD8t": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des options de personnalisation de maillots ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_xffNMQ": {
+          "type": "item",
+          "settings": {
+            "title": "QuestionComment entretenir et laver mon maillot de foot ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        }
+      },
+      "block_order": [
+        "166442457738b23caf-0",
+        "166442457738b23caf-1",
+        "item_yTaBL9",
+        "166442457738b23caf-2",
+        "item_jQTD8t",
+        "item_xffNMQ"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Notre support client est disponible 24h/24 et 7j/7.<br/><br/></p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "Délai de réponse moyen : 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -691,7 +715,7 @@
     "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
-    "faq",
-    "impact_text_LKRgD9"
+    "impact_text_LKRgD9",
+    "faq"
   ]
 }
