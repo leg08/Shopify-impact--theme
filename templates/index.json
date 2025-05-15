@@ -590,6 +590,32 @@
         "heading_gradient": ""
       }
     },
+    "featured_collection_qGGiBY": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "kits-enfants",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "impact_text_LKRgD9": {
       "type": "impact-text",
       "blocks": {
@@ -715,6 +741,7 @@
     "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
+    "featured_collection_qGGiBY",
     "impact_text_LKRgD9",
     "faq"
   ]
