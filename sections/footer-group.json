@@ -37,7 +37,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "service client",
-            "content": "<p>¿Dudas? Estamos disponibles para ayudarte antes y después de tu compra. Escríbenos a <a><strong>servicio@cocinapopular.com</strong></a> y te responderemos lo antes posible.</p>"
+            "content": "<p>Nous sommes là pour vous assister avant et après votre achat. N'hésitez pas à nous contacter, nous vous répondrons dès que possible. Notre service client est disponible 24h/24 et 7j/7.</p>"
           }
         },
         "discount": {
@@ -49,8 +49,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Pago 100% seguro",
-            "content": "<p>Tus datos están protegidos con cifrado SSL y métodos confiables.</p>"
+            "title": "Paiement sécurisé",
+            "content": "<p>Nous nous assurons que vos informations de paiement sont traitées en toute sécurité.</p>"
           }
         },
         "payment": {
