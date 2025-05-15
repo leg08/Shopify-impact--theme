@@ -168,6 +168,49 @@
         "text_gradient": ""
       }
     },
+    "shop_the_look_P9FeAG": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_3kD9Lq": {
+          "type": "product",
+          "settings": {
+            "product": "maillot-retro-santos-2011-12-copie",
+            "horizontal_position": 30,
+            "vertical_position": 30
+          }
+        },
+        "product_QeC4hW": {
+          "type": "product",
+          "settings": {
+            "product": "maillot-algerie-edition-speciale-2024-25-version-player-copie",
+            "horizontal_position": 75,
+            "vertical_position": 53
+          }
+        }
+      },
+      "block_order": [
+        "product_3kD9Lq",
+        "product_QeC4hW"
+      ],
+      "name": "Shop the look",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify://shop_images/36ddaa11-f3ba-48bd-9b38-4d1cc92c82aa.webp",
+        "title": "Shop the look",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#FFF"
+      }
+    },
     "featured_collection_aKPGR4": {
       "type": "featured-collection",
       "settings": {
@@ -674,6 +717,7 @@
     "slideshow",
     "media-grid",
     "scrolling_text_ihYrhN",
+    "shop_the_look_P9FeAG",
     "featured_collection_aKPGR4",
     "media_grid_XtfBHM",
     "featured-collection",
