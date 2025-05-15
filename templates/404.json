@@ -9,10 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-not-found",
-      "settings": {}
-    },
     "slideshow_kVN6hV": {
       "type": "slideshow",
       "blocks": {
@@ -70,9 +66,14 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
+    },
+    "main": {
+      "type": "main-not-found",
+      "custom_css": [],
+      "settings": {}
     }
   },
   "order": [
