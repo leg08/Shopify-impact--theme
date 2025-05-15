@@ -168,6 +168,113 @@
         "text_gradient": ""
       }
     },
+    "media_grid_XtfBHM": {
+      "type": "media-grid",
+      "blocks": {
+        "image_D8zfNf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_8.webp",
+            "title": "",
+            "heading_tag": "h1",
+            "link_url": "shopify://collections/euro-2024",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "image_MfFwCT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_7.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "link_url": "shopify://collections/ligue-1",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_bqbeLx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Copie_de_Sans_titre_5.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "link_url": "shopify://collections/collection-2024-2025",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_WiG7Pb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Copie_de_Sans_titre_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "shopify://collections/la-liga",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_D8zfNf",
+        "image_MfFwCT",
+        "image_bqbeLx",
+        "image_WiG7Pb"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -542,6 +649,7 @@
     "slideshow",
     "media-grid",
     "scrolling_text_ihYrhN",
+    "media_grid_XtfBHM",
     "featured-collection",
     "slideshow_BFj9HE",
     "image_link_blocks_DpiXGm",
