@@ -516,78 +516,61 @@
         "background_gradient": ""
       }
     },
-    "image_link_blocks_nPaYq6": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_JnVAMz": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "https://www.instagram.com/p/DIWjm_JP0i4/",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_MPWTKc": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "https://www.instagram.com/p/DJMoWCCst4M/",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_FhWYtP": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "https://www.instagram.com/p/DIg9o5lhhQ1/",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_eqCMzN": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_JnVAMz",
-        "item_MPWTKc",
-        "item_FhWYtP",
-        "item_eqCMzN"
-      ],
-      "name": "Image link blocks",
+    "featured_collection_tcNbRq": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "full_width": true,
-        "block_size": "large",
+        "collection": "equipe-de-france",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "",
+        "title": "Club Français",
         "content": "",
         "link_url": "",
-        "link_text": "",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
-        "heading_gradient": ""
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "multiple_images_with_text_DAPH6L": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_8ezDAK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2e09d456-da45-4e97-a3a0-97f60723cb79.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Maillots manches longues",
+            "content": "<p>Affichez votre passion pour le football avec style et confort grâce à notre collection exclusive de<strong>maillots manches longues</strong>.<br/><br/></p>",
+            "button_url": "shopify://collections/maillots-manche-longue",
+            "button_text": "Découvrir.."
+          }
+        }
+      },
+      "block_order": [
+        "item_8ezDAK"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "featured_collection_qGGiBY": {
@@ -614,6 +597,112 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "image_link_blocks_nPaYq6": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_JnVAMz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-de-france",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_MPWTKc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/5.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-dallemagne",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_FhWYtP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/6.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-du-portugal",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_RFicXk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-du-mexique",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eqCMzN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/7.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-du-japon",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_mkTjCq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/equipe-despagne",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_JnVAMz",
+        "item_MPWTKc",
+        "item_FhWYtP",
+        "item_RFicXk",
+        "item_eqCMzN",
+        "item_mkTjCq"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "small",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "multiple_images_with_text_Lhyhf6": {
@@ -797,8 +886,10 @@
     "media-grid",
     "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
-    "image_link_blocks_nPaYq6",
+    "featured_collection_tcNbRq",
+    "multiple_images_with_text_DAPH6L",
     "featured_collection_qGGiBY",
+    "image_link_blocks_nPaYq6",
     "multiple_images_with_text_Lhyhf6",
     "featured_collection_zFWiKf",
     "impact_text_LKRgD9",
