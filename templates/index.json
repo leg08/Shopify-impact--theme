@@ -55,9 +55,9 @@
         "item-1": {
           "type": "image",
           "settings": {
-            "title": "Almacenamiento y Organización",
+            "title": "",
             "heading_tag": "h1",
-            "link_url": "shopify://collections/organizacion-cocina-popular",
+            "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_column_span": 1,
@@ -76,9 +76,9 @@
         "item-2": {
           "type": "image",
           "settings": {
-            "title": "Molinillo de Café",
+            "title": "",
             "heading_tag": "h6",
-            "link_url": "shopify://products/molinillo-de-cafe-electrico-portatil-con-carga-usb-y-ceramica-cocina-popular",
+            "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_column_span": 1,
@@ -97,9 +97,9 @@
         "item-3": {
           "type": "image",
           "settings": {
-            "title": "Sacacorchos Eléctrico",
+            "title": "",
             "heading_tag": "h6",
-            "link_url": "shopify://products/sacacorchos-electrico-inalambrico-abridor-de-vino-automatico-cocina-popular",
+            "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_column_span": 1,
