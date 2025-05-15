@@ -236,6 +236,31 @@
         "product_card_text_color": ""
       }
     },
+    "featured_collection_hWVy8G": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "nos-ensembles",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Nos Ensembles",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver todo",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "media_grid_XtfBHM": {
       "type": "media-grid",
       "blocks": {
@@ -717,8 +742,9 @@
     "slideshow",
     "media-grid",
     "scrolling_text_ihYrhN",
-    "shop_the_look_P9FeAG",
     "featured_collection_aKPGR4",
+    "shop_the_look_P9FeAG",
+    "featured_collection_hWVy8G",
     "media_grid_XtfBHM",
     "featured-collection",
     "slideshow_BFj9HE",
