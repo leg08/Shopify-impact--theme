@@ -80,6 +80,116 @@
         "product_card_text_color": ""
       }
     },
+    "media_grid_rNiJti": {
+      "type": "media-grid",
+      "blocks": {
+        "image_fhfbMV": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h6",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "video_e7Q67c": {
+          "type": "video",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "video_K8J8Dt": {
+          "type": "video",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "video_FCdg3Y": {
+          "type": "video",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_fhfbMV",
+        "video_e7Q67c",
+        "video_K8J8Dt",
+        "video_FCdg3Y"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
     "scrolling_text_ihYrhN": {
       "type": "scrolling-text",
       "name": "Scrolling text",
@@ -188,7 +298,7 @@
         "product_card_text_color": "",
         "product_card_mobile_background": "",
         "product_card_mobile_text_color": "",
-        "background_dots": "#FFF"
+        "background_dots": "#ffffff"
       }
     },
     "featured_collection_JCiitn": {
@@ -531,7 +641,7 @@
         "title": "Kits Enfants",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "Voir tout",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -657,6 +767,7 @@
   "order": [
     "slideshow",
     "featured-collection",
+    "media_grid_rNiJti",
     "scrolling_text_ihYrhN",
     "featured_collection_PQnrza",
     "featured_collection_kH43DX",
