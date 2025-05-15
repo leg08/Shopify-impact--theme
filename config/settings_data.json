@@ -43,6 +43,7 @@
     "text_font": "poppins_n4",
     "text_font_size_mobile": 15,
     "text_font_size_desktop": 16,
+    "currency_code_enabled": false,
     "show_page_transition": true,
     "heading_apparition": "split_rotation",
     "color_swatch_style": "rectangle",
