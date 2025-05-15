@@ -78,10 +78,6 @@
           "settings": {
             "collapse_content": false
           }
-        },
-        "globo_product_option_app_block_yqky8Y": {
-          "type": "shopify://apps/globo-product-option/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {}
         }
       },
       "block_order": [
@@ -95,8 +91,7 @@
         "buy_buttons",
         "liquid_Kwdg6h",
         "liquid_PkEkci",
-        "description",
-        "globo_product_option_app_block_yqky8Y"
+        "description"
       ],
       "custom_css": [
         "div {font-size: 15px; font-family: \"Poppins\";}",
