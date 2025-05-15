@@ -77,7 +77,7 @@
         ".text-with-icons__text-wrapper {font-size: 15px; padding: 0px; font-family: \"Poppins\";}"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h6",
