@@ -85,6 +85,13 @@
             "title": "2 maillots achetés = 1 maillot offert ! Comment profiter ?",
             "content": "<p>Ajoutez 3 maillots à votre panier : la réduction s'appliquera automatiquement !</p>"
           }
+        },
+        "collapsible_text_xQEwdk": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Qualité Premium garanti",
+            "content": "<p><strong>Tous nos Maillots sont identiques aux modèles officiels</strong>, avec des matériaux de haute qualité et une finition impeccable.</p>"
+          }
         }
       },
       "block_order": [
@@ -99,7 +106,8 @@
         "liquid_Kwdg6h",
         "liquid_PkEkci",
         "description",
-        "collapsible_text_9tbGJP"
+        "collapsible_text_9tbGJP",
+        "collapsible_text_xQEwdk"
       ],
       "custom_css": [
         "div {font-size: 15px; font-family: \"Poppins\";}",
