@@ -60,7 +60,14 @@
     "favicon": "shopify://shop_images/favcon-cp_44f44278-d406-49d0-824a-318f32bc03ec.png",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "3720565183479497137": {
+        "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Sound": {
