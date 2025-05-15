@@ -617,8 +617,22 @@
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "¿Cómo puedo rastrear mi pedido?",
-            "content": "<p>Recibirás un correo electrónico con el código de seguimiento dentro de las <strong>48 horas</strong> posteriores a tu compra. Desde ese enlace, podrás ver el estado de tu pedido en tiempo real. Si no lo recibes, contáctanos y te ayudaremos encantados.</p>"
+            "title": "Est-ce que vous avez des tailles pour enfants et adultes?",
+            "content": "<p>Oui, nous proposons des maillots pour enfants et adultes. Vous trouverez une gamme complète de tailles adaptées à toutes les tranches d'âge, des plus petits aux plus grands. Consultez notre guide des tailles pour choisir celle qui vous convient le mieux.</p>"
+          }
+        },
+        "item_4djFLC": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des options de personnalisation de maillots ?",
+            "content": "<p>Oui, nous proposons des options de personnalisation de maillots. Vous pouvez ajouter le nom et le numéro de votre choix, ainsi que des badges spécifiques. Pour plus de détails et pour personnaliser votre maillot, veuillez consulter la section dédiée à la personnalisation lors de votre commande.</p>"
+          }
+        },
+        "item_mH6bjh": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
       },
@@ -626,7 +640,9 @@
         "166442457738b23caf-0",
         "166442457738b23caf-1",
         "item_Pp3RAJ",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_4djFLC",
+        "item_mH6bjh"
       ],
       "settings": {
         "full_width": false,
