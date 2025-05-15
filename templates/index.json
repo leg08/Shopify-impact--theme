@@ -444,66 +444,8 @@
         "background_gradient": ""
       }
     },
-    "featured_collection_jmjBVc": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [
-          "sacacorchos-electrico-inalambrico-abridor-de-vino-automatico-cocina-popular",
-          "estante-de-condimentos-extraible-de-2-niveles-cocina-popular",
-          "dispensador-de-alimentos-giratorio-redon-cocina-popular",
-          "soporte-para-condimentos-5-en-1-cocina-popular",
-          "organizador-de-huevos-de-32-rejillas-cajon-apilable-nevera-ordenada-cocina-popular",
-          "cuenco-de-fruta-de-cristal-con-base-de-madera-cocina-popular",
-          "espumador-de-leche-inalambrico-usb-tipo-c-batidora-para-cafe-y-capuchino"
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Tu Rincón Soñado",
-        "content": "",
-        "link_url": "",
-        "link_text": "Ver todo",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "slideshow_BFj9HE": {
       "type": "slideshow",
-      "blocks": {
-        "image_y6hA7D": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h6",
-            "button_text": "",
-            "button_link": "shopify://collections/los-mas-vendidos-cocina-popular",
-            "text_color": "#ffffff",
-            "button_background": "#ffde59",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_y6hA7D"
-      ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
@@ -588,6 +530,31 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
+      }
+    },
+    "featured_collection_jmjBVc": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "kits-enfants",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Kits Enfants",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver todo",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
     "impact_text_LKRgD9": {
@@ -712,9 +679,9 @@
     "featured-product",
     "scrolling-text",
     "media-grid",
-    "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
+    "featured_collection_jmjBVc",
     "impact_text_LKRgD9",
     "faq"
   ]
