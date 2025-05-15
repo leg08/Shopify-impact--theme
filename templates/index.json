@@ -49,53 +49,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [
-          "psg-fourth-blue-2025",
-          "japon-eagle-edition-limitee-copie",
-          "lamine-yamal-x-travis-scott-original-copie-2",
-          "maroc-maillot-concept-2024-25-rose",
-          "maroc-maillot-concept-2024-25-rose-copie"
-        ],
-        "full_width": false,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Nos Best-Sellers",
-        "content": "",
-        "link_url": "",
-        "link_text": "Voir tout",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "scrolling_text_ihYrhN": {
-      "type": "scrolling-text",
-      "name": "Scrolling text",
-      "settings": {
-        "full_width": true,
-        "text": "2 ACHETÉS = 1 OFFERT",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 10,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
     "media_grid_rNiJti": {
       "type": "media-grid",
       "blocks": {
@@ -146,9 +99,9 @@
         "video_K8J8Dt": {
           "type": "video",
           "settings": {
-            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "external_video_url": "",
             "show_video_controls": false,
-            "title": "Promote your products",
+            "title": "",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
@@ -169,9 +122,9 @@
         "video_FCdg3Y": {
           "type": "video",
           "settings": {
-            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "external_video_url": "",
             "show_video_controls": false,
-            "title": "Promote your products",
+            "title": "",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
@@ -204,6 +157,53 @@
         "mobile_row_height": 150,
         "background": "",
         "background_gradient": ""
+      }
+    },
+    "scrolling_text_ihYrhN": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "2 ACHETÉS = 1 OFFERT",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "psg-fourth-blue-2025",
+          "japon-eagle-edition-limitee-copie",
+          "lamine-yamal-x-travis-scott-original-copie-2",
+          "maroc-maillot-concept-2024-25-rose",
+          "maroc-maillot-concept-2024-25-rose-copie"
+        ],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Nos Best-Sellers",
+        "content": "",
+        "link_url": "",
+        "link_text": "Voir tout",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
     "featured_collection_PQnrza": {
