@@ -55,6 +55,7 @@
         "item-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/unnamed.png",
             "title": "",
             "heading_tag": "h1",
             "link_url": "",
@@ -70,7 +71,7 @@
             "button_background": "#000000",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 15
+            "overlay_opacity": 0
           }
         },
         "video_CdLQBr": {
