@@ -647,7 +647,7 @@
           "type": "item",
           "settings": {
             "title": "Est-il possible de suivre ma commande?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>Une fois que votre colis sera expédié, vous obtiendrez un courriel contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande en utilisant ce lien :</p>"
           }
         },
         "166442457738b23caf-2": {
