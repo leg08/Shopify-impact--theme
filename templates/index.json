@@ -590,6 +590,42 @@
         "heading_gradient": ""
       }
     },
+    "impact_text_LKRgD9": {
+      "type": "impact-text",
+      "blocks": {
+        "item_jA6X7C": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Identique",
+            "content": "<p>Chaque détail des maillots officiels est représenté fidèlement par nos maillots, pour une qualité et une apparence identiques.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_jA6X7C"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(184deg, rgba(163, 163, 163, 1) 3%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -665,42 +701,6 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "impact_text_LKRgD9": {
-      "type": "impact-text",
-      "blocks": {
-        "item_jA6X7C": {
-          "type": "item",
-          "settings": {
-            "title": "100%",
-            "subheading": "Identique",
-            "content": "<p>Chaque détail des maillots officiels est représenté fidèlement par nos maillots, pour une qualité et une apparence identiques.</p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_jA6X7C"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(184deg, rgba(163, 163, 163, 1) 3%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -715,7 +715,7 @@
     "featured_collection_jmjBVc",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
-    "faq",
-    "impact_text_LKRgD9"
+    "impact_text_LKRgD9",
+    "faq"
   ]
 }
