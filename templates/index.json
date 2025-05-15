@@ -649,8 +649,8 @@
           "type": "item",
           "settings": {
             "title": "100%",
-            "subheading": "Showcase a benefit of your product",
-            "content": "",
+            "subheading": "Identique",
+            "content": "<p>Chaque détail des maillots officiels est représenté fidèlement par nos maillots, pour une qualité et une apparence identiques.</p>",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -672,7 +672,7 @@
         "background": "",
         "background_gradient": "",
         "heading_text_color": "",
-        "heading_gradient": "",
+        "heading_gradient": "linear-gradient(184deg, rgba(163, 163, 163, 1) 3%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%)",
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
