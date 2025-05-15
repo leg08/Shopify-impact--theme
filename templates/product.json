@@ -92,6 +92,13 @@
             "title": "Qualité Premium garanti",
             "content": "<p><strong>Tous nos Maillots sont identiques aux modèles officiels</strong>, avec des matériaux de haute qualité et une finition impeccable.<br/><br/></p>"
           }
+        },
+        "collapsible_text_L4tNbL": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Retour gratuit",
+            "content": "<p>Une fois votre commande passée, vous recevrez vos articles sous<strong>7 à 12 jours ouvrables</strong>. Si un article ne vous convient pas, vous avez<strong>14 jours après réception</strong>pour nous le retourner gratuitement.</p>"
+          }
         }
       },
       "block_order": [
@@ -107,7 +114,8 @@
         "liquid_PkEkci",
         "description",
         "collapsible_text_9tbGJP",
-        "collapsible_text_9KywHL"
+        "collapsible_text_9KywHL",
+        "collapsible_text_L4tNbL"
       ],
       "custom_css": [
         "div {font-size: 15px; font-family: \"Poppins\";}",
