@@ -56,14 +56,14 @@
         "payment": {
           "type": "item",
           "settings": {
-            "icon": "picto-credit-card",
+            "icon": "picto-return",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Compra fácil y rápida",
-            "content": "<p>Navega, elige y paga en pocos clics. ¡Así de simple es cocinar mejor!</p>"
+            "title": "Retours gratuits",
+            "content": "<p>Vous avez la possibilité de retourner votre commande sans frais.</p>"
           }
         }
       },
