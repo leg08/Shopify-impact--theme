@@ -247,85 +247,6 @@
         "heading_gradient": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h3"
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "dropdown",
-            "color_mode": "block",
-            "size_chart_page": ""
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "separator",
-        "variant-picker",
-        "buy-buttons"
-      ],
-      "settings": {
-        "full_width": false,
-        "product": "protexclean®-protector-de-estufas-promocion-rayos-paga-4-obten-8",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "contained",
-        "mobile_carousel_control": "thumbnails",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
     "scrolling-text": {
       "type": "scrolling-text",
       "settings": {
@@ -532,6 +453,37 @@
         "heading_gradient": ""
       }
     },
+    "multiple_images_with_text_b8WqXh": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_bchdDL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Tf.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "KITS ENFANTS",
+            "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_bchdDL"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "featured_collection_jmjBVc": {
       "type": "featured-collection",
       "settings": {
@@ -676,11 +628,11 @@
     "featured-collection",
     "scrolling_text_ihYrhN",
     "collection-list",
-    "featured-product",
     "scrolling-text",
     "media-grid",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
+    "multiple_images_with_text_b8WqXh",
     "featured_collection_jmjBVc",
     "impact_text_LKRgD9",
     "faq"
