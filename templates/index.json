@@ -173,226 +173,47 @@
         "heading_gradient": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
+    "shop_the_look_zy4Ljq": {
+      "type": "shop-the-look",
       "blocks": {
-        "title": {
-          "type": "title",
+        "product_UFyXDY": {
+          "type": "product",
           "settings": {
-            "heading_tag": "h3"
+            "product": "maillot-retro-santos-2011-12-copie",
+            "horizontal_position": 30,
+            "vertical_position": 30
           }
         },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
+        "product_CAAMVn": {
+          "type": "product",
           "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "dropdown",
-            "color_mode": "block",
-            "size_chart_page": ""
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
+            "product": "maillot-algerie-edition-speciale-2024-25-version-player-copie",
+            "horizontal_position": 75,
+            "vertical_position": 56
           }
         }
       },
       "block_order": [
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "separator",
-        "variant-picker",
-        "buy-buttons"
+        "product_UFyXDY",
+        "product_CAAMVn"
       ],
-      "settings": {
-        "full_width": false,
-        "product": "protexclean®-protector-de-estufas-promocion-rayos-paga-4-obten-8",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "contained",
-        "mobile_carousel_control": "thumbnails",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
+      "name": "Shop the look",
       "settings": {
         "full_width": true,
-        "text": "Innovación que transforma tu cocina con calidad.",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 7,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
-    "media-grid": {
-      "type": "media-grid",
-      "blocks": {
-        "item-1": {
-          "type": "image",
-          "settings": {
-            "title": "Almacenamiento y Organización",
-            "heading_tag": "h4",
-            "link_url": "shopify://collections/organizacion-cocina-popular",
-            "link_text": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15
-          }
-        },
-        "item-2": {
-          "type": "image",
-          "settings": {
-            "title": "Molinillo de Café",
-            "heading_tag": "h6",
-            "link_url": "shopify://products/molinillo-de-cafe-electrico-portatil-con-carga-usb-y-ceramica-cocina-popular",
-            "link_text": "",
-            "mobile_text_position": "place-self-end-start text-start",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "settings": {
-            "title": "Sacacorchos Eléctrico",
-            "heading_tag": "h6",
-            "link_url": "shopify://products/sacacorchos-electrico-inalambrico-abridor-de-vino-automatico-cocina-popular",
-            "link_text": "",
-            "mobile_text_position": "place-self-end-start text-start",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "settings": {
-            "title": "Detalles que inspiran",
-            "heading_tag": "h4",
-            "link_url": "shopify://collections/decoracion",
-            "link_text": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 10
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "29246d34-c6e0-4373-84f6-b15e57736a00"
-      ],
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
-    "featured_collection_jmjBVc": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "nos-ensembles",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Nos Ensembles",
+        "stack_mobile": true,
+        "image": "shopify://shop_images/36ddaa11-f3ba-48bd-9b38-4d1cc92c82aa.webp",
+        "title": "LE PRINCE EST DE RETOUR",
         "content": "",
-        "link_url": "",
-        "link_text": "Ver todo",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
         "product_card_background": "",
-        "product_card_text_color": ""
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#FFF"
       }
     },
     "image_link_blocks_hEW4qd": {
@@ -471,20 +292,6 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
-      }
-    },
-    "slideshow_BFj9HE": {
-      "type": "slideshow",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": ""
       }
     },
     "featured_collection_tcNbRq": {
@@ -951,12 +758,8 @@
     "featured-collection",
     "scrolling_text_ihYrhN",
     "collection-list",
-    "featured-product",
-    "scrolling-text",
-    "media-grid",
-    "featured_collection_jmjBVc",
+    "shop_the_look_zy4Ljq",
     "image_link_blocks_hEW4qd",
-    "slideshow_BFj9HE",
     "featured_collection_tcNbRq",
     "image_link_blocks_PDXUJt",
     "featured_collection_zjDzmP",
