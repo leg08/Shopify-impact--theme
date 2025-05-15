@@ -15,13 +15,12 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/news.png",
-            "mobile_image": "shopify://shop_images/gautier12_d87a3865-207d-432e-97d6-ed3ac388c3ac.jpg",
+            "image": "shopify://shop_images/2.png",
             "content_max_width": 400,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "¡A TODA ESPAÑA!",
-            "title": "Envío Gratis",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "shopify://collections/all",
