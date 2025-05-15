@@ -453,6 +453,37 @@
         "heading_gradient": ""
       }
     },
+    "multiple_images_with_text_HnRnd4": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_FBPNDc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2e09d456-da45-4e97-a3a0-97f60723cb79.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "KITS ENFANTS",
+            "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
+            "button_url": "shopify://collections/kits-enfants",
+            "button_text": "Découvrir.."
+          }
+        }
+      },
+      "block_order": [
+        "item_FBPNDc"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "featured_collection_jmjBVc": {
       "type": "featured-collection",
       "settings": {
@@ -657,6 +688,7 @@
     "media-grid",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
+    "multiple_images_with_text_HnRnd4",
     "featured_collection_jmjBVc",
     "multiple_images_with_text_b8WqXh",
     "featured_collection_NWKT6r",
