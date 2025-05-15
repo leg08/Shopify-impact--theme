@@ -596,8 +596,8 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "¿Cuánto tarda en llegar mi pedido?",
-            "content": "<p>Los pedidos suelen entregarse en un plazo de <strong>4 a 8 días laborables</strong> dentro de España. Recibirás un número de seguimiento por email tan pronto como tu pedido sea enviado.</p>"
+            "title": "Quel est le délai prévu pour le traitement et l'expédition des articles?",
+            "content": "<p>Après réception de votre commande, nous effectuons des contrôles de qualité et des tests afin de garantir la qualité du produit avant son expédition. Le délai de traitement varie en fonction du produit spécifique, avec un délai moyen d'environ 1 à 3 jours ouvrés.<br/><br/></p>"
           }
         },
         "166442457738b23caf-1": {
@@ -605,6 +605,13 @@
           "settings": {
             "title": "¿Puedo devolver un producto si no estoy satisfecho/a?",
             "content": "<p>¡Claro! Tienes hasta <strong>30 días naturales</strong> desde la recepción para solicitar la devolución. El producto debe estar sin usar y en su embalaje original. Solo tienes que contactarnos y te guiaremos en el proceso.</p>"
+          }
+        },
+        "item_Pp3RAJ": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         },
         "166442457738b23caf-2": {
@@ -618,6 +625,7 @@
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
+        "item_Pp3RAJ",
         "166442457738b23caf-2"
       ],
       "settings": {
@@ -630,7 +638,7 @@
         "answer_time": "Tiempo medio de respuesta: 24h",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
