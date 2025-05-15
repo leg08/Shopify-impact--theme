@@ -610,8 +610,8 @@
         "item_Pp3RAJ": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Est-ce que je peux suivre ma commande?",
+            "content": "<p>Une fois votre colis expédié, vous recevrez un courrier électronique contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande via ce lien :</p>"
           }
         },
         "166442457738b23caf-2": {
