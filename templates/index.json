@@ -191,32 +191,6 @@
         "background_dots": "#FFF"
       }
     },
-    "featured_collection_tcNbRq": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "collection-2025-2026",
-        "products": [],
-        "full_width": false,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Collection 2025 / 2026",
-        "content": "",
-        "link_url": "",
-        "link_text": "Voir tout",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "featured_collection_JCiitn": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -687,7 +661,6 @@
     "featured_collection_PQnrza",
     "featured_collection_kH43DX",
     "shop_the_look_zy4Ljq",
-    "featured_collection_tcNbRq",
     "featured_collection_JCiitn",
     "image_link_blocks_hEW4qd",
     "featured_collection_zjDzmP",
