@@ -111,8 +111,8 @@
         "text_QRXYcJ": {
           "type": "text",
           "settings": {
-            "title": "Centro de Atención al Cliente",
-            "content": "<p><strong>Servicio:</strong> Lunes a viernes: 08:00 hs a 19:00 hs | Sábados, domingos y feriados: 11:00 hs a 22:00 hs.</p><p><strong>Correo electrónico: </strong>servicio@cocinapopular.com</p>",
+            "title": "Centre d'assistance",
+            "content": "<p>Service : du lundi au Dimanche : 24h/24h<br/></p><p><strong>Contact : </strong></p>",
             "enable_follow_on_shop": true
           }
         },
