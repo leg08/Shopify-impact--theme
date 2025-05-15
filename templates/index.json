@@ -173,7 +173,15 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "psg-fourth-blue-2025",
+          "japon-eagle-edition-limitee-copie",
+          "lamine-yamal-x-travis-scott-original-copie-2",
+          "maroc-maillot-concept-2024-25-rose",
+          "maroc-maillot-concept-2024-25-rose-copie",
+          "algerie-dom-2025",
+          "maillot-24-25-algerie-special-blanc"
+        ],
         "full_width": false,
         "stack_products": false,
         "show_progress_bar": false,
