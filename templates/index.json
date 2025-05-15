@@ -55,7 +55,7 @@
         "image_fhfbMV": {
           "type": "image",
           "settings": {
-            "title": "",
+            "title": "Promote your products",
             "heading_tag": "h6",
             "link_url": "",
             "link_text": "",
@@ -76,9 +76,9 @@
         "video_e7Q67c": {
           "type": "video",
           "settings": {
-            "external_video_url": "",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "show_video_controls": false,
-            "title": "",
+            "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
