@@ -23,8 +23,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Envío grátis a toda España",
-            "content": "<p>Recebe tu pedido sin costes de envío, rápido y con seguimiento.</p>"
+            "title": "Livraison gratuite",
+            "content": "<p>Votre commande sera livrée dans un délai de 7 à 12 jours ouvrables ouvrés après traitement.</p>"
           }
         },
         "customer-support": {
@@ -36,7 +36,7 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Servicio al cliente",
+            "title": "service client",
             "content": "<p>¿Dudas? Estamos disponibles para ayudarte antes y después de tu compra. Escríbenos a <a><strong>servicio@cocinapopular.com</strong></a> y te responderemos lo antes posible.</p>"
           }
         },
