@@ -191,6 +191,58 @@
         "background_dots": "#FFF"
       }
     },
+    "featured_collection_tcNbRq": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "collection-2025-2026",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Collection 2025 / 2026",
+        "content": "",
+        "link_url": "",
+        "link_text": "Voir tout",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_JCiitn": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "nos-ensembles",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Nos Ensembles",
+        "content": "",
+        "link_url": "",
+        "link_text": "Voir tout",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "image_link_blocks_hEW4qd": {
       "type": "image-link-blocks",
       "blocks": {
@@ -259,106 +311,6 @@
         "block_size": "medium",
         "subheading": "",
         "title": "Collections",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "featured_collection_tcNbRq": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "collection-2025-2026",
-        "products": [],
-        "full_width": false,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 50,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Collection 2025 / 2026",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "image_link_blocks_PDXUJt": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_YByefN": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_CtyTzB": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_8wEazc": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_JiFwFw": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_YByefN",
-        "item_CtyTzB",
-        "item_8wEazc",
-        "item_JiFwFw"
-      ],
-      "name": "Image link blocks",
-      "settings": {
-        "full_width": false,
-        "block_size": "small",
-        "subheading": "",
-        "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -735,9 +687,9 @@
     "featured_collection_PQnrza",
     "featured_collection_kH43DX",
     "shop_the_look_zy4Ljq",
-    "image_link_blocks_hEW4qd",
     "featured_collection_tcNbRq",
-    "image_link_blocks_PDXUJt",
+    "featured_collection_JCiitn",
+    "image_link_blocks_hEW4qd",
     "featured_collection_zjDzmP",
     "multiple_images_with_text_DAPH6L",
     "featured_collection_qGGiBY",
