@@ -594,7 +594,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "kits-enfants",
+        "collection": "equipe-de-france",
         "products": [],
         "full_width": false,
         "stack_products": false,
@@ -603,7 +603,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Kits Enfants",
+        "title": "Club Français",
         "content": "",
         "link_url": "",
         "link_text": "View all",
@@ -651,7 +651,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "equipe-de-france",
+        "collection": "kits-enfants",
         "products": [],
         "full_width": false,
         "stack_products": false,
