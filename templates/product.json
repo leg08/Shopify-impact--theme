@@ -78,6 +78,13 @@
           "settings": {
             "collapse_content": true
           }
+        },
+        "collapsible_text_9tbGJP": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "2 maillots achetés = 1 maillot offert ! Comment profiter ?",
+            "content": "<p>Ajoutez 3 maillots à votre panier : la réduction s'appliquera automatiquement !</p>"
+          }
         }
       },
       "block_order": [
@@ -91,7 +98,8 @@
         "buy_buttons",
         "liquid_Kwdg6h",
         "liquid_PkEkci",
-        "description"
+        "description",
+        "collapsible_text_9tbGJP"
       ],
       "custom_css": [
         "div {font-size: 15px; font-family: \"Poppins\";}",
