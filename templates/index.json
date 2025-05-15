@@ -453,6 +453,31 @@
         "heading_gradient": ""
       }
     },
+    "featured_collection_jmjBVc": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "kits-enfants",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Kits Enfants",
+        "content": "",
+        "link_url": "",
+        "link_text": "Voir tout",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "multiple_images_with_text_b8WqXh": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -484,7 +509,7 @@
         "button_text_color": ""
       }
     },
-    "featured_collection_jmjBVc": {
+    "featured_collection_NWKT6r": {
       "type": "featured-collection",
       "settings": {
         "collection": "kits-enfants",
@@ -632,8 +657,9 @@
     "media-grid",
     "slideshow_BFj9HE",
     "image_link_blocks_nPaYq6",
-    "multiple_images_with_text_b8WqXh",
     "featured_collection_jmjBVc",
+    "multiple_images_with_text_b8WqXh",
+    "featured_collection_NWKT6r",
     "impact_text_LKRgD9",
     "faq"
   ]
