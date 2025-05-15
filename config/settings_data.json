@@ -27,15 +27,14 @@
     "header_text_color": "#272727",
     "footer_background": "#f2f2f2",
     "footer_text_color": "#272727",
-    "primary_button_background": "#000000",
+    "primary_button_background": "#ffde59",
     "primary_button_text_color": "#ffffff",
-    "secondary_button_background": "#000000",
+    "secondary_button_background": "#ffde59",
     "secondary_button_text_color": "#ffffff",
-    "product_card_text_color": "#000000",
-    "product_rating_color": "#000000",
+    "product_card_text_color": "#272727",
     "product_on_sale_accent": "#00bf63",
-    "product_sold_out_badge_background": "#e90000",
-    "product_primary_badge_background": "#000000",
+    "product_sold_out_badge_background": "#bebdb9",
+    "product_primary_badge_background": "#ffde59",
     "heading_font": "poppins_n7",
     "heading_font_size": "large",
     "heading_text_transform": "normal",
@@ -43,7 +42,6 @@
     "text_font": "poppins_n4",
     "text_font_size_mobile": 15,
     "text_font_size_desktop": 16,
-    "currency_code_enabled": false,
     "show_page_transition": true,
     "heading_apparition": "split_rotation",
     "color_swatch_style": "rectangle",
@@ -62,14 +60,7 @@
     "favicon": "shopify://shop_images/favcon-cp_44f44278-d406-49d0-824a-318f32bc03ec.png",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": [],
-    "blocks": {
-      "3720565183479497137": {
-        "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Sound": {
