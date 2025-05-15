@@ -103,8 +103,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "Quiénes Somos",
-            "content": "<p>En <em><strong>Cocina Popular</strong></em><em>,</em> hacemos que cocinar sea fácil y accesible con productos innovadores y funcionales. Somos una comunidad comprometida con la calidad, el diseño y tu mejor experiencia. ¡Bienvenido! 💛</p>",
+            "title": "A propos de nous",
+            "content": "<p>Votre boutique en ligne pour des maillots de football identique. Découvrez des maillots de toutes les équipes nationales et clubs internationaux avec des nouveautés.</p>",
             "enable_follow_on_shop": true
           }
         },
