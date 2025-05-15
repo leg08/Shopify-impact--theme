@@ -632,7 +632,7 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Quel est le délai de traitement et d'expéditions des articles ?",
+            "title": "Quel est le temps nécessaire pour traiter et expédier les articles?",
             "content": "<p>Los pedidos suelen entregarse en un plazo de <strong>4 a 8 días laborables</strong> dentro de España. Recibirás un número de seguimiento por email tan pronto como tu pedido sea enviado.</p>"
           }
         },
