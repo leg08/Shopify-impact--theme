@@ -103,8 +103,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "A propos de nous",
-            "content": "<p>Votre boutique en ligne pour des maillots de football identique. Découvrez des maillots de toutes les équipes nationales et clubs internationaux avec des nouveautés.</p>",
+            "title": "À propos de nous",
+            "content": "<p>Votre boutique en ligne pour des maillots de football officiels. Découvrez des maillots de multiples clubs et sélections nationales avec un large choix de nouveauté aux quotidien.</p>",
             "enable_follow_on_shop": false
           }
         },
