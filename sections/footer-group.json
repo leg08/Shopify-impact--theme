@@ -113,7 +113,7 @@
           "settings": {
             "title": "Centre d'assistance",
             "content": "<p>Service : du lundi au Dimanche : 24h/24h<br/></p><p><strong>Contact : </strong>maison.football.store.llc@gmail.com</p>",
-            "enable_follow_on_shop": true
+            "enable_follow_on_shop": false
           }
         },
         "links": {
@@ -134,7 +134,7 @@
         "div {font-size: 15px; font-family: \"Poppins\";}"
       ],
       "settings": {
-        "show_social_media": true,
+        "show_social_media": false,
         "show_payment_icons": true,
         "show_country_selector": true,
         "show_country_flag": true,
