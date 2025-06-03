@@ -12,14 +12,16 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-1": {
+        "image_rpiE4e": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gautier12.jpg",
+            "mobile_image": "shopify://shop_images/gautier12.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
+            "subheading": "Tell your story",
+            "title": "Slide title",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -27,14 +29,14 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0,
+            "overlay_opacity": 30,
             "background": "",
             "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "slide-1"
+        "image_rpiE4e"
       ],
       "settings": {
         "full_width": true,
@@ -46,21 +48,6 @@
         "cycle_speed": 6,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "settings": {
-        "full_width": true,
-        "text": "2 ACHETÉS = 1 OFFERT",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 13,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
       }
     },
     "media_grid_cUWrGm": {
@@ -171,6 +158,21 @@
         "mobile_row_height": 150,
         "background": "",
         "background_gradient": ""
+      }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "2 ACHETÉS = 1 OFFERT",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 13,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
       }
     },
     "collection-list": {
