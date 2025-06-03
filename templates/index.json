@@ -75,9 +75,10 @@
             "overlay_opacity": 0
           }
         },
-        "video_gCWqdc": {
+        "video_RbV3Fm": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_1742314390615.mp4",
             "external_video_url": "",
             "show_video_controls": false,
             "title": "",
@@ -101,6 +102,7 @@
         "video_tyFkKX": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747001086096.mp4",
             "external_video_url": "",
             "show_video_controls": false,
             "title": "",
@@ -121,9 +123,10 @@
             "overlay_opacity": 0
           }
         },
-        "video_RbV3Fm": {
+        "video_gCWqdc": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/ssstik.io_@maisontosport.fr__1747000930331.mp4",
             "external_video_url": "",
             "show_video_controls": false,
             "title": "",
@@ -147,9 +150,9 @@
       },
       "block_order": [
         "image_eL8t9E",
-        "video_gCWqdc",
+        "video_RbV3Fm",
         "video_tyFkKX",
-        "video_RbV3Fm"
+        "video_gCWqdc"
       ],
       "name": "Media grid",
       "settings": {
