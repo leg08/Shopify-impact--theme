@@ -12,12 +12,12 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_rpiE4e": {
+        "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/gautier12.jpg",
-            "mobile_image": "shopify://shop_images/gautier12.jpg",
-            "content_max_width": 400,
+            "image": "shopify://shop_images/news.png",
+            "mobile_image": "shopify://shop_images/2.png",
+            "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
@@ -36,7 +36,7 @@
         }
       },
       "block_order": [
-        "image_rpiE4e"
+        "slide-1"
       ],
       "settings": {
         "full_width": true,
@@ -50,12 +50,13 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "media_grid_cUWrGm": {
+    "media_grid_rp4kXG": {
       "type": "media-grid",
       "blocks": {
-        "image_4pe3Fy": {
+        "image_eL8t9E": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/unnamed.png",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -74,18 +75,18 @@
             "overlay_opacity": 0
           }
         },
-        "video_PVmf9e": {
+        "video_gCWqdc": {
           "type": "video",
           "settings": {
-            "external_video_url": "",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "show_video_controls": false,
-            "title": "",
+            "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "background": "#000000",
             "background_gradient": "",
@@ -97,18 +98,18 @@
             "overlay_opacity": 0
           }
         },
-        "video_eHEmTC": {
+        "video_tyFkKX": {
           "type": "video",
           "settings": {
-            "external_video_url": "",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "show_video_controls": false,
-            "title": "",
+            "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "background": "#000000",
             "background_gradient": "",
@@ -120,18 +121,18 @@
             "overlay_opacity": 0
           }
         },
-        "video_JmAMXH": {
+        "video_RbV3Fm": {
           "type": "video",
           "settings": {
-            "external_video_url": "",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "show_video_controls": false,
-            "title": "",
+            "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "background": "#000000",
             "background_gradient": "",
@@ -145,10 +146,10 @@
         }
       },
       "block_order": [
-        "image_4pe3Fy",
-        "video_PVmf9e",
-        "video_eHEmTC",
-        "video_JmAMXH"
+        "image_eL8t9E",
+        "video_gCWqdc",
+        "video_tyFkKX",
+        "video_RbV3Fm"
       ],
       "name": "Media grid",
       "settings": {
@@ -164,11 +165,11 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "2 ACHETÉS = 1 OFFERT",
+        "text": "2 Achetés = 1 OFFERT",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 11,
+        "scrolling_speed": 10,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -882,7 +883,7 @@
   },
   "order": [
     "slideshow",
-    "media_grid_cUWrGm",
+    "media_grid_rp4kXG",
     "scrolling-text",
     "collection-list",
     "featured-collection",
