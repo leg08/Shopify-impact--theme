@@ -22,8 +22,8 @@ var __privateMethod = (obj, member, method) => {
 };
 
 // js/sections/announcement-bar.js
-import { timeline } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { EffectCarousel } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { timeline } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { EffectCarousel } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var AnnouncementBar = class extends EffectCarousel {
   _transitionTo(fromSlide, toSlide) {
     timeline([
@@ -80,7 +80,7 @@ if (!window.customElements.get("split-cursor")) {
 }
 
 // js/sections/collection-list.js
-import { timeline as timeline2, inView } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { timeline as timeline2, inView } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var CollectionList = class extends HTMLElement {
   connectedCallback() {
     if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -101,7 +101,7 @@ if (!window.customElements.get("collection-list")) {
 }
 
 // js/sections/customer-login.js
-import { Delegate } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { Delegate } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var AccountLogin = class extends HTMLElement {
   connectedCallback() {
     this.recoverForm = this.querySelector("#recover");
@@ -124,8 +124,8 @@ if (!window.customElements.get("account-login")) {
 }
 
 // js/sections/header.js
-import { animate, timeline as timeline3, stagger, Delegate as Delegate2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { AnimatedDetails, EffectCarousel as EffectCarousel2, Drawer, throttle } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { animate, timeline as timeline3, stagger, Delegate as Delegate2 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { AnimatedDetails, EffectCarousel as EffectCarousel2, Drawer, throttle } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var reduceMenuAnimation = JSON.parse("false");
 var StoreHeader = class extends HTMLElement {
   connectedCallback() {
@@ -483,7 +483,7 @@ if (!window.customElements.get("navigation-drawer")) {
 }
 
 // js/sections/feature-chart.js
-import { animate as motionAnimate, scroll } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { animate as motionAnimate, scroll } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var FeatureChart = class extends HTMLElement {
   connectedCallback() {
     this.viewButtonElement = this.querySelector('[data-action="toggle-rows"]');
@@ -549,8 +549,8 @@ if (!window.customElements.get("feature-chart")) {
 }
 
 // js/sections/image-banner.js
-import { scroll as scroll2, timeline as timeline4, animate as animate2, inView as inView2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { imageLoaded, getHeadingKeyframe } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { scroll as scroll2, timeline as timeline4, animate as animate2, inView as inView2 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { imageLoaded, getHeadingKeyframe } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var ImageBanner = class extends HTMLElement {
   connectedCallback() {
     if (this.parallax && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -584,7 +584,7 @@ if (!window.customElements.get("image-banner")) {
 }
 
 // js/sections/image-link-blocks.js
-import { ScrollArea } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { ScrollArea } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var ImageLinkBlocks = class extends HTMLElement {
   connectedCallback() {
     this.items = Array.from(this.children);
@@ -604,8 +604,8 @@ if (!window.customElements.get("image-link-blocks")) {
 }
 
 // js/sections/images-with-text-scrolling.js
-import { animate as animate3, timeline as timeline5, inView as inView3 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { getHeadingKeyframe as getHeadingKeyframe2, throttle as throttle2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { animate as animate3, timeline as timeline5, inView as inView3 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { getHeadingKeyframe as getHeadingKeyframe2, throttle as throttle2 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var ImagesWithTextScrolling = class extends HTMLElement {
   connectedCallback() {
     inView3(this, this._reveal.bind(this));
@@ -669,7 +669,7 @@ if (!window.customElements.get("images-with-text-scrolling")) {
 }
 
 // js/sections/impact-text.js
-import { animate as animate4, inView as inView4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { animate as animate4, inView as inView4 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var ImpactText = class extends HTMLElement {
   connectedCallback() {
     if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -710,7 +710,7 @@ if (!window.customElements.get("impact-text")) {
 }
 
 // js/sections/media-grid.js
-import { timeline as timeline6, inView as inView5 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { timeline as timeline6, inView as inView5 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var MediaGrid = class extends HTMLElement {
   connectedCallback() {
     this.items = Array.from(this.children);
@@ -731,8 +731,8 @@ if (!window.customElements.get("media-grid")) {
 }
 
 // js/sections/media-with-text.js
-import { animate as animate5, timeline as timeline7, inView as inView6 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { imageLoaded as imageLoaded2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { animate as animate5, timeline as timeline7, inView as inView6 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { imageLoaded as imageLoaded2 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var reduceMotion = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 var MediaWithText = class extends HTMLElement {
   connectedCallback() {
@@ -758,8 +758,8 @@ if (!window.customElements.get("media-with-text")) {
 }
 
 // js/sections/multiple-images-with-text.js
-import { timeline as timeline8, animate as animate6, stagger as stagger2, inView as inView7 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { EffectCarousel as EffectCarousel3, imageLoaded as imageLoaded3, getHeadingKeyframe as getHeadingKeyframe3 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { timeline as timeline8, animate as animate6, stagger as stagger2, inView as inView7 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { EffectCarousel as EffectCarousel3, imageLoaded as imageLoaded3, getHeadingKeyframe as getHeadingKeyframe3 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var MultipleImagesWithText = class extends HTMLElement {
   constructor() {
     super();
@@ -860,7 +860,7 @@ if (!window.customElements.get("multiple-images-with-text-content-list")) {
 }
 
 // js/sections/newsletter-popup.js
-import { Drawer as Drawer2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { Drawer as Drawer2 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var NewsletterPopup = class extends Drawer2 {
   connectedCallback() {
     super.connectedCallback();
@@ -898,8 +898,8 @@ if (!window.customElements.get("newsletter-popup")) {
 }
 
 // js/sections/press.js
-import { timeline as timeline9, animate as animate7, inView as inView8 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { EffectCarousel as EffectCarousel4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { timeline as timeline9, animate as animate7, inView as inView8 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { EffectCarousel as EffectCarousel4 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var reduceMotion2 = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 var PressCarousel = class extends EffectCarousel4 {
   constructor() {
@@ -960,7 +960,7 @@ if (!window.customElements.get("product-recommendations")) {
 }
 
 // js/sections/recently-viewed-products.js
-import { extractSectionId } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { extractSectionId } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var _isLoaded, _searchQueryString, searchQueryString_get, _loadProducts, loadProducts_fn;
 var RecentlyViewedProducts = class extends HTMLElement {
   constructor() {
@@ -1005,7 +1005,7 @@ if (!window.customElements.get("recently-viewed-products")) {
 }
 
 // js/sections/revealed-image-on-scroll.js
-import { scroll as scroll3, timeline as timeline10, ScrollOffset, inView as inView9 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import { scroll as scroll3, timeline as timeline10, ScrollOffset, inView as inView9 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 var RevealedImage = class extends HTMLElement {
   connectedCallback() {
     const scrollTracker = this.querySelector(".revealed-image__scroll-tracker"), scroller = this.querySelector(".revealed-image__scroller");
@@ -1051,8 +1051,8 @@ if (!window.customElements.get("shop-the-look-dots")) {
 }
 
 // js/sections/slideshow.js
-import { animate as motionAnimate2, timeline as timeline11, inView as inView10 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
-import { EffectCarousel as EffectCarousel5, imageLoaded as imageLoaded4, getHeadingKeyframe as getHeadingKeyframe4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/theme.js?548";
+import { animate as motionAnimate2, timeline as timeline11, inView as inView10 } from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
+import { EffectCarousel as EffectCarousel5, imageLoaded as imageLoaded4, getHeadingKeyframe as getHeadingKeyframe4 } from "//maison-football-store.fr/cdn/shop/t/7/assets/theme.js?v=183815443370670581691747404600";
 var Slideshow = class extends HTMLElement {
   constructor() {
     super();

@@ -1,6 +1,6 @@
 .country-flags {
-  background: -webkit-image-set(url("//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/country-flags.png?v=37230036826556269641691263407") 1x, url("//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/country-flags-2x.png?v=119388446682176363021691263407") 2x) no-repeat top left;
-  background: image-set(url("//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/country-flags.png?v=37230036826556269641691263407") 1x, url("//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/country-flags-2x.png?v=119388446682176363021691263407") 2x) no-repeat top left;
+  background: -webkit-image-set(url("//maison-football-store.fr/cdn/shop/t/7/assets/country-flags.png?v=37230036826556269641745795978") 1x, url("//maison-football-store.fr/cdn/shop/t/7/assets/country-flags-2x.png?v=119388446682176363021745795975") 2x) no-repeat top left;
+  background: image-set(url("//maison-football-store.fr/cdn/shop/t/7/assets/country-flags.png?v=37230036826556269641745795978") 1x, url("//maison-football-store.fr/cdn/shop/t/7/assets/country-flags-2x.png?v=119388446682176363021745795975") 2x) no-repeat top left;
   width: 20px;
   height: 20px;
   flex-shrink: 0;

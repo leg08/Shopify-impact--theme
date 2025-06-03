@@ -2,7 +2,7 @@
  * This file contains some integration with the native Shopify Reviews app to style it in the context of the theme.
  */
 
-import {Delegate} from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
+import {Delegate} from "//maison-football-store.fr/cdn/shop/t/7/assets/vendor.min.js?v=20880576495916334881745795975";
 
 const _transformForm = (spr) => {
   const labels = Array.from(spr.querySelectorAll('.spr-form-label')),
