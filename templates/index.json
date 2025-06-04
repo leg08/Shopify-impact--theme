@@ -272,41 +272,6 @@
         "product_card_text_color": ""
       }
     },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "100%",
-            "subheading": "Showcase a benefit of your product",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -831,6 +796,41 @@
         "chart_true_false_color": ""
       }
     },
+    "impact-text": {
+      "type": "impact-text",
+      "blocks": {
+        "1664424181b38582d5-0": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Identique",
+            "content": "<p>Nos maillots reproduisent fidèlement chaque détail des maillots officiels pour une qualité et une apparence identiques.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "1664424181b38582d5-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -890,7 +890,6 @@
     "scrolling-text",
     "collection-list",
     "featured-collection",
-    "impact-text",
     "image-with-text-overlay",
     "media-grid",
     "before-after-image",
@@ -899,6 +898,7 @@
     "multiple-images-with-text",
     "featured-product",
     "feature-chart",
+    "impact-text",
     "faq"
   ]
 }
