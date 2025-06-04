@@ -837,41 +837,65 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
+            "title": "Quel est le délai de traitement et d'expéditions des articles ?",
             "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_6PzFya": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison de ma commande ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_49xGyj": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je suivre ma commande ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_AgGWrU": {
+          "type": "item",
+          "settings": {
+            "title": "Proposez-vous des tailles pour enfants et adultes ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
+            "title": "Proposez-vous des options de personnalisation de maillots ?",
             "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
           }
         },
-        "166442457738b23caf-2": {
+        "item_cWCzTK": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Comment entretenir et laver mon maillot de foot ?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
+        "item_6PzFya",
+        "item_49xGyj",
+        "item_AgGWrU",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "item_cWCzTK"
       ],
       "settings": {
         "full_width": false,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "content": "<p>Notre support client est disponible 24h/24 et 7j/7.</p>",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "Notre service clientèle est disponible 7j/7j et 24h sur 24h.",
+        "answer_time": "Délai de réponse moyen : 1h",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
