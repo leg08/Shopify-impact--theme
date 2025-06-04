@@ -179,6 +179,120 @@
         "text_gradient": ""
       }
     },
+    "collection_list_zfA8Gj": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_B3Tenk": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Design_sans_titre_8.webp",
+            "subheading": "EURO 2024",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        },
+        "collection_XPQ8Nx": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Copie_de_Sans_titre_1.jpg",
+            "subheading": "LA LIGA",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_9LDXTt": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Design_sans_titre_7.jpg",
+            "subheading": "LIGUE 1",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_3djXCb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Copie_de_Sans_titre_5.jpg",
+            "subheading": "Maillots 2024/25",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_B3Tenk",
+        "collection_XPQ8Nx",
+        "collection_9LDXTt",
+        "collection_3djXCb"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "featured_collection_pBA6Ue": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "collection-2025-2026",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "{{ section.settings.collection.title }}",
+        "content": "",
+        "link_url": "",
+        "link_text": "Tout voir",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "image_link_blocks_rHMDW9": {
       "type": "image-link-blocks",
       "blocks": {
@@ -513,6 +627,8 @@
     "slideshow",
     "media_grid_rp4kXG",
     "scrolling-text",
+    "collection_list_zfA8Gj",
+    "featured_collection_pBA6Ue",
     "image_link_blocks_rHMDW9",
     "multiple_images_with_text_jqgRJG",
     "featured_collection_C37YCA",
