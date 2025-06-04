@@ -838,42 +838,42 @@
           "type": "item",
           "settings": {
             "title": "Quel est le délai de traitement et d'expéditions des articles ?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "content": "<p>Après réception de votre commande, nous effectuons des contrôles de qualité et des tests afin de garantir la qualité du produit avant son expédition. Le délai de traitement varie en fonction du produit spécifique, avec un délai moyen d'environ 1 à 3 jours ouvrés.</p>"
           }
         },
         "item_6PzFya": {
           "type": "item",
           "settings": {
             "title": "Quel est le délai de livraison de ma commande ?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>Veuillez prévoir un délai de 7 à 14 jours ouvrables pour la livraison de votre commande . Le traitement de votre commande prends en moyenne 1 à 3 jours ouvrables.</p>"
           }
         },
         "item_49xGyj": {
           "type": "item",
           "settings": {
             "title": "Puis-je suivre ma commande ?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>Une fois votre colis expédié, vous recevrez un courrier électronique contenant les coordonnées du transporteur et votre numéro d'envoi, que vous pourrez utiliser pour suivre votre commande via ce lien :</p>"
           }
         },
         "item_AgGWrU": {
           "type": "item",
           "settings": {
             "title": "Proposez-vous des tailles pour enfants et adultes ?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>Oui, nous proposons des maillots pour enfants et adultes. Vous trouverez une gamme complète de tailles adaptées à toutes les tranches d'âge, des plus petits aux plus grands. Consultez notre guide des tailles pour choisir celle qui vous convient le mieux.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
             "title": "Proposez-vous des options de personnalisation de maillots ?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "content": "<p>Oui, nous proposons des options de personnalisation de maillots. Vous pouvez ajouter le nom et le numéro de votre choix, ainsi que des badges spécifiques. Pour plus de détails et pour personnaliser votre maillot, veuillez consulter la section dédiée à la personnalisation lors de votre commande.</p>"
           }
         },
         "item_cWCzTK": {
           "type": "item",
           "settings": {
             "title": "Comment entretenir et laver mon maillot de foot ?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<ol><li><strong>Lavage à la main</strong> : C'est la méthode la plus sûre. Utilisez de l'eau froide ou tiède et un détergent doux.</li><li><strong>Lavage en machine</strong> : Si vous utilisez une machine à laver, retournez le maillot à l'envers et utilisez un cycle délicat à l'eau froide. Évitez l'utilisation de l'eau chaude qui pourrait endommager les impressions.</li><li><strong>Évitez les produits chimiques</strong> : N'utilisez pas de javel ni d'adoucissant, car ils peuvent endommager le tissu et les impressions.</li><li><strong>Séchage</strong> : Laissez sécher à l'air libre à l'ombre. Évitez le séchage en machine et l'exposition directe au soleil pour prévenir la décoloration et la déformation.</li><li><strong>Repassage</strong> : Si nécessaire, repassez à basse température à l'envers et évitez de passer le fer directement sur les impressions ou les logos.</li></ol><p>En suivant ces conseils, vous prolongerez la durée de vie de votre maillot tout en conservant sa qualité et ses couleurs.</p>"
           }
         }
       },
