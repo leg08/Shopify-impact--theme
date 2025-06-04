@@ -807,8 +807,8 @@
             "content": "<p>Nos maillots reproduisent fidèlement chaque détail des maillots officiels pour une qualité et une apparence identiques.</p>",
             "button_text": "",
             "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 3
           }
         }
       },
