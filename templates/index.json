@@ -186,16 +186,16 @@
           "type": "product",
           "settings": {
             "product": "maillot-algerie-edition-speciale-2024-25-version-player-copie",
-            "horizontal_position": 52,
-            "vertical_position": 25
+            "horizontal_position": 78,
+            "vertical_position": 52
           }
         },
         "product_wQTmrW": {
           "type": "product",
           "settings": {
             "product": "maillot-retro-santos-2011-12-copie",
-            "horizontal_position": 75,
-            "vertical_position": 53
+            "horizontal_position": 22,
+            "vertical_position": 41
           }
         }
       },
