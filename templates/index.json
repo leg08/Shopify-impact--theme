@@ -179,6 +179,32 @@
         "text_gradient": ""
       }
     },
+    "featured_collection_TUbnDx": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "womens-euro-2025",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "NOUVEAUTÉS EN EXCLUSIVITÉ",
+        "content": "<h5>Women's EURO 2025</h5>",
+        "link_url": "",
+        "link_text": "Tout voir",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "shop_the_look_GpUVWw": {
       "type": "shop-the-look",
       "blocks": {
@@ -696,6 +722,7 @@
     "slideshow",
     "media_grid_rp4kXG",
     "scrolling-text",
+    "featured_collection_TUbnDx",
     "shop_the_look_GpUVWw",
     "featured_collection_bfjjrB",
     "collection_list_zfA8Gj",
