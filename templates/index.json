@@ -184,7 +184,21 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "ajax-amsterdam-bob-marley-maillot-foot-2025-2026-copie",
+          "psg-fourth-blue-2025-copie",
+          "psg-ext-2025",
+          "psg-fourth-blue-2025",
+          "lamine-yamal-x-travis-scott-original-copie-2",
+          "maroc-maillot-concept-2024-25-rose",
+          "maroc-maillot-concept-2024-25-rose-copie",
+          "maillot-inter-miami-concept-2024-2025",
+          "maillot-inter-miami-foot-concept-2024-2025",
+          "algerie-dom-2025",
+          "maillot-japon-concept-2023-copie",
+          "lamine-yamal-x-travis-scott-original-copie",
+          "lamine-yamal-x-travis-scott-original-copie-1"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
@@ -297,7 +311,7 @@
         "product_card_text_color": "",
         "product_card_mobile_background": "",
         "product_card_mobile_text_color": "",
-        "background_dots": "#FFF"
+        "background_dots": "#ffffff"
       }
     },
     "featured_collection_bfjjrB": {
