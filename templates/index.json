@@ -179,6 +179,58 @@
         "text_gradient": ""
       }
     },
+    "shop_the_look_GpUVWw": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_7NgLmq": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": 52,
+            "vertical_position": 25
+          }
+        },
+        "product_wQTmrW": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": 75,
+            "vertical_position": 53
+          }
+        },
+        "product_eqFE8W": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": 33,
+            "vertical_position": 73
+          }
+        }
+      },
+      "block_order": [
+        "product_7NgLmq",
+        "product_wQTmrW",
+        "product_eqFE8W"
+      ],
+      "name": "Shop the look",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify://shop_images/36ddaa11-f3ba-48bd-9b38-4d1cc92c82aa.webp",
+        "title": "LE PRINCE EST DE RETOUR",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#FFF"
+      }
+    },
     "featured_collection_bfjjrB": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -653,6 +705,7 @@
     "slideshow",
     "media_grid_rp4kXG",
     "scrolling-text",
+    "shop_the_look_GpUVWw",
     "featured_collection_bfjjrB",
     "collection_list_zfA8Gj",
     "featured_collection_pBA6Ue",
