@@ -179,72 +179,91 @@
         "text_gradient": ""
       }
     },
-    "collection-list": {
-      "type": "collection-list",
+    "multiple_images_with_text_jqgRJG": {
+      "type": "multiple-images-with-text",
       "blocks": {
-        "collection-1": {
-          "type": "collection",
+        "item_xa3Wab": {
+          "type": "item",
           "settings": {
-            "collection": "",
+            "image": "shopify://shop_images/2e09d456-da45-4e97-a3a0-97f60723cb79.webp",
+            "image_rotation_degrees": -2,
             "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "title": "Maillots manches longues",
+            "content": "<p>Affichez votre passion pour le football avec style et confort grâce à notre collection exclusive de<strong>maillots manches longues</strong>.</p>",
+            "button_url": "shopify://collections/maillots-manche-longue",
+            "button_text": "Découvrir..."
           }
         }
       },
       "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
+        "item_xa3Wab"
       ],
+      "name": "Multiple images with text",
       "settings": {
         "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 3,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "featured_collection_C37YCA": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "equipe-de-france",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
         "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Collection list",
+        "title": "{{ section.settings.collection.title }}",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "Tout voir",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
-        "heading_gradient": ""
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "multiple_images_with_text_dzJNB8": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_QgyWRD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Tf.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "KITS ENFANTS",
+            "content": "<p>kits complets pour enfants, comprenant maillots de foot, shorts.</p>",
+            "button_url": "",
+            "button_text": "Découvrir..."
+          }
+        }
+      },
+      "block_order": [
+        "item_QgyWRD"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "featured-collection": {
@@ -388,7 +407,9 @@
     "slideshow",
     "media_grid_rp4kXG",
     "scrolling-text",
-    "collection-list",
+    "multiple_images_with_text_jqgRJG",
+    "featured_collection_C37YCA",
+    "multiple_images_with_text_dzJNB8",
     "featured-collection",
     "impact-text",
     "faq"
