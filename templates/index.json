@@ -154,7 +154,6 @@
         "video_tyFkKX",
         "video_gCWqdc"
       ],
-      "name": "Media grid",
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -181,23 +180,23 @@
     },
     "featured_collection_T7GcFn": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "",
         "products": [
           "ajax-amsterdam-bob-marley-maillot-foot-2025-2026-copie",
+          "maillot-collector-domicile-stadium-psg-nike-24-25-paris-champions-d-europe-2025-copie",
+          "psg-fourth-noir-copie-1",
+          "maillot-paris-fc-x-jefe",
+          "maillot-2024-2025-paris-saint-germain-maillot-third",
           "psg-fourth-blue-2025-copie",
           "psg-ext-2025",
-          "psg-fourth-blue-2025",
-          "lamine-yamal-x-travis-scott-original-copie-2",
           "maroc-maillot-concept-2024-25-rose",
+          "lamine-yamal-x-travis-scott-original-copie-2",
           "maroc-maillot-concept-2024-25-rose-copie",
           "maillot-inter-miami-concept-2024-2025",
           "maillot-inter-miami-foot-concept-2024-2025",
-          "algerie-dom-2025",
-          "maillot-japon-concept-2023-copie",
-          "lamine-yamal-x-travis-scott-original-copie",
-          "lamine-yamal-x-travis-scott-original-copie-1"
+          "maillot-inter-miami-foot-2024-2025-concept",
+          "algerie-dom-2025"
         ],
         "full_width": true,
         "stack_products": false,
@@ -221,7 +220,6 @@
     },
     "featured_collection_qC64hw": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "collection-2024-2025",
         "products": [],
@@ -247,7 +245,6 @@
     },
     "featured_collection_TUbnDx": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "womens-euro-2025",
         "products": [],
@@ -295,7 +292,6 @@
         "product_7NgLmq",
         "product_wQTmrW"
       ],
-      "name": "Shop the look",
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -316,7 +312,6 @@
     },
     "featured_collection_bfjjrB": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "nos-ensembles",
         "products": [],
@@ -410,7 +405,6 @@
         "collection_9LDXTt",
         "collection_3djXCb"
       ],
-      "name": "Collection list",
       "settings": {
         "full_width": true,
         "stack_collections": true,
@@ -430,7 +424,6 @@
     },
     "featured_collection_pBA6Ue": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "collection-2025-2026",
         "products": [],
@@ -544,7 +537,6 @@
         "item_88EDhw",
         "item_QYnd4J"
       ],
-      "name": "Image link blocks",
       "settings": {
         "full_width": true,
         "block_size": "small",
@@ -579,7 +571,6 @@
       "block_order": [
         "item_xa3Wab"
       ],
-      "name": "Multiple images with text",
       "settings": {
         "full_width": true,
         "images_layout": "stacked",
@@ -635,7 +626,6 @@
       "block_order": [
         "item_QgyWRD"
       ],
-      "name": "Multiple images with text",
       "settings": {
         "full_width": true,
         "images_layout": "stacked",
