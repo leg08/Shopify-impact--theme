@@ -408,8 +408,8 @@
         "collection_3djXCb"
       ],
       "settings": {
-        "full_width": true,
-        "stack_collections": true,
+        "full_width": false,
+        "stack_collections": false,
         "collections_per_row": 4,
         "show_progress_bar": false,
         "subheading": "",
