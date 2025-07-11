@@ -71,7 +71,7 @@ Supported variables
       {%- if settings.currency_code_enabled -%}
         {{- line_item.final_line_price | plus: addons_final_price_totals | money_with_currency -}}
       {%- else -%}
-        {{- line_item.final_line_price | plus: addons_final_price_totals money -}}
+        {{- line_item.final_line_price | plus: addons_final_price_totals | money -}}
       {%- endif -%}
     </sale-price>
 
