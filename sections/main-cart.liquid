@@ -49,14 +49,48 @@
 
               <tbody class="order-summary__body">
                 {%- for line_item in cart.items -%}
+                {% assign is_addon_product = false %}
+                {% assign addons_original_price = 0 %}
+                {% assign addons_original_price_totals = 0 %}
+                {% assign addons_final_price = 0 %}
+                {% assign addons_final_price_totals = 0 %}
+                
+                {% for p in line_item.properties %}
+                  {% if p contains '_gpo_parent_product_group' %}
+                    {% assign is_addon_product = true %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% for line_item_2 in cart.items %}
+                  {% if line_item_2.properties._gpo_parent_product_group == blank %}
+                    {% continue %}
+                  {% endif %}
+                
+                  {% if line_item_2.properties._gpo_parent_product_group == line_item.properties._gpo_product_group %}
+                    {% assign addons_original_price = addons_original_price | plus: line_item_2.original_price %}
+                    {% assign addons_original_price_totals = addons_original_price_totals | plus: line_item_2.original_line_price %}
+                    {% assign addons_final_price = addons_final_price | plus: line_item_2.final_price %}
+                    {% assign addons_final_price_totals = addons_final_price_totals | plus: line_item_2.final_line_price %}
+                  {% endif %}
+                {% endfor %}
+                  
                   {%- assign line_max_quantity = '' -%}
 
                   {%- if line_item.variant.inventory_management != blank and line_item.variant.inventory_policy == 'deny' -%}
                     {%- assign line_max_quantity = line_item.variant.inventory_quantity -%}
                   {%- endif -%}
 
-                  <tr>
-                    <td>{%- render 'line-item', line_item: line_item -%}</td>
+                  <tr class="{% if is_addon_product %}gpo-hidden{% endif %}">
+                    <td>
+                        {%- render 'line-item',
+                            line_item: line_item,
+                            addons_original_price: addons_original_price,
+                            addons_original_price_totals: addons_original_price_totals,
+                            addons_final_price: addons_final_price,
+                            addons_final_price_totals: addons_final_price_totals
+                        -%}
+                    </td>
 
                     <td class="hidden align-center text-center text-subdued sm:table-cell">
                       <line-item-quantity class="v-stack justify-center gap-2">
@@ -68,7 +102,7 @@
                       </line-item-quantity>
                     </td>
 
-                    <td class="hidden align-center text-subdued text-end sm:table-cell">{{ line_item.final_line_price | money }}</td>
+                    <td class="hidden align-center text-subdued text-end sm:table-cell">{{ line_item.final_line_price | plus: addons_final_price_totals | money }}</td>
                   </tr>
                 {%- endfor -%}
               </tbody>
