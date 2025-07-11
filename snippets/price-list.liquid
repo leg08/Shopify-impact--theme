@@ -69,9 +69,9 @@ Supported variables
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
-        {{- line_item.final_line_price | money_with_currency -}}
+        {{- line_item.final_line_price | plus: addons_final_price_totals | money_with_currency -}}
       {%- else -%}
-        {{- line_item.final_line_price | money -}}
+        {{- line_item.final_line_price | plus: addons_final_price_totals money -}}
       {%- endif -%}
     </sale-price>
 
@@ -80,9 +80,9 @@ Supported variables
         <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- line_item.original_line_price | money_with_currency -}}
+          {{- line_item.original_line_price | plus: addons_original_price_totals | money_with_currency -}}
         {%- else -%}
-          {{- line_item.original_line_price | money -}}
+          {{- line_item.original_line_price | plus: addons_original_price_totals | money -}}
         {%- endif -%}
       </compare-at-price>
     {%- endif -%}
