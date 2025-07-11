@@ -36,7 +36,13 @@ Supported variables
         <p class="bold">{{ line_item.product.title | default: line_item.title }}</p>
       {%- endif -%}
 
-      {%- render 'price-list', line_item: line_item -%}
+      {%- render 'price-list',
+          line_item: line_item,
+          addons_original_price: addons_original_price,
+          addons_original_price_totals: addons_original_price_totals,
+          addons_final_price: addons_final_price,
+          addons_final_price_totals: addons_final_price_totals 
+      -%}
     </div>
 
     {%- unless line_item.product.has_only_default_variant or line_item.gift_card -%}
