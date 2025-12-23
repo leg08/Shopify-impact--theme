@@ -180,6 +180,32 @@
     },
     "featured_collection_T7GcFn": {
       "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Collection Can 2025/2026",
+        "content": "",
+        "link_url": "",
+        "link_text": "Tout voir",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_4NRKAU": {
+      "type": "featured-collection",
       "settings": {
         "collection": "",
         "products": [
@@ -784,6 +810,7 @@
     "media_grid_rp4kXG",
     "scrolling-text",
     "featured_collection_T7GcFn",
+    "featured_collection_4NRKAU",
     "featured_collection_qC64hw",
     "featured_collection_TUbnDx",
     "shop_the_look_GpUVWw",
